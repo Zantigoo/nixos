@@ -24,7 +24,6 @@
     enable = true;
     allowedUDPPortRanges = [
       53317 #LocalSend
-    ]
+    ];
   };
-}
 

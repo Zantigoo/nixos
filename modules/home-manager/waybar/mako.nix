@@ -8,11 +8,12 @@
 {
   services.mako = {
     enable = true;
-    background-color = "#1e1e2e";
-    text-color = "#cdd6f4";
-    progress-color = "over ";
-    border-color = "#cba6f7";
-    borderRadius = 15;
+    backgroundColor = "#1e1e2e";
+    textColor = "#cdd6f4";
+    progressColor = "over #313244";
+    borderColor = "#cba6f7";
+    borderRadius = 10;
     borderSize = 3;
-  }
+    defaultTimeout = 15000;
+  };
 }

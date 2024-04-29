@@ -2,10 +2,10 @@
   home.packages = with pkgs; [
     # desktop utilities
     xarchiver
-    gparted
     pavucontrol
     easyeffects
     hyprlock
+    localsend
   
 
     # desktop apps

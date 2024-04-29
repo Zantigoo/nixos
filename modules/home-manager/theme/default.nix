@@ -46,7 +46,7 @@
     enable = true;
 
     # qt platform theme
-    platformTheme = "gtk";
+    platformTheme.name = "gtk";
 
     # qt style
     style = {

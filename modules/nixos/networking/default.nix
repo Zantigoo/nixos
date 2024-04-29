@@ -19,5 +19,12 @@
     };
    };
   services.blueman.enable = true;
+
+  networking.firewall = {
+    enable = true;
+    allowedUDPPortRanges = [
+      53317 #LocalSend
+    ]
+  };
 }
 

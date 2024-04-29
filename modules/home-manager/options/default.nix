@@ -1,6 +1,7 @@
 { lib, config, ... }:
 
 {
+
   options = {
     assetsDirectory = lib.mkOption {
       type = lib.types.path;

@@ -15,8 +15,5 @@
     ./waybar
   ];
 
-  # enable KDE connect
-  services.kdeconnect.enable = true;
-
   
 }

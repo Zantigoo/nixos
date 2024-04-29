@@ -32,9 +32,13 @@
     librsvg
     pango
     gnome.nautilus
+    nautilus-open-any-terminal
   ];
-  
-  programs.nautilus-open-any-terminal.enable = true;
+  programs.gnome-disks.enable = true;
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "foot";
+   };
   programs.nm-applet.enable = true;
 
 

@@ -72,10 +72,10 @@
       }
       tooltip {
       /* background: rgb(250, 244, 252); */
-      background: #3b4253;
+      background: @surface0;
       }
       tooltip label {
-      color: #E4E8EF;
+      color: @subtext0;
       }
       #custom-launcher {
       font-size: 20px;
@@ -88,10 +88,10 @@
       padding-right: 10px;
       }
       #memory {
-      color: #8EBBBA;
+      color: @mauve;
       }
       #cpu {
-      color: #B38DAC;
+      color: @mauve;
       }
       #clock {
       color: @text;
@@ -150,8 +150,9 @@
         ];
         modules-right = [
           "wireplumber"
-          "network"
+          "cpu"
           "tray"
+          
         ];
         "custom/launcher" = {
           "format" = "󰫢 ";
@@ -198,7 +199,7 @@
         };
         "wireplumber" = {
           "scroll-step" = 1;
-          "format" = "{icon} {volume}%";
+          "format" = "{volume}%";
           "format-muted" = "󰖁 Muted";
           "format-icons" = {
             "default" = [
@@ -235,10 +236,10 @@
         };
         "clock" = {
           "interval" = 1;
-          "format" = "{:%I:%M %p  %A %b %d}";
+          "format" = "{:%R  %A %b %d}";
           "tooltip" = true;
           # "tooltip-format"= "{=%A; %d %B %Y}\n<tt>{calendar}</tt>"
-          "tooltip-format" = "上午：高数\n下午：Ps\n晚上：Golang\n<tt>{calendar}</tt>";
+          "tooltip-format" = "<tt>{calendar}</tt>";
         };
         "memory" = {
           "interval" = 1;
@@ -250,6 +251,7 @@
         "cpu" = {
           "interval" = 1;
           "format" = "󰻠 {usage}%";
+          "on-click" = "btop";
         };
         /*
           "mpd" = {

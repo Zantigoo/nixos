@@ -7,6 +7,10 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
+    plugins = [ 
+      pkgs.rofi-calc
+      pkgs.rofi-emoji
+    ];
     font = "JetBrains Mono 12";
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
@@ -15,32 +19,32 @@
       palette = config.colorScheme.palette;
 
       card = {
-        background-color = mkLiteral "rgba(0, 0, 0, 0.5)";
-        border = mkLiteral "1px solid";
-        border-radius = mkLiteral "4px";
-        padding = mkLiteral "8px";
+        background-color = mkLiteral "rgba(${hexToRGBString "," palette.base00}, 1)";
+        border = mkLiteral "5px solid";
+        border-radius = mkLiteral "10px";
+        padding = mkLiteral "10px";
       };
     in {
       "*" = {
         background-color = mkLiteral "transparent";
-        foreground-color = mkLiteral "#${palette.base05}";
+      # foreground-color = mkLiteral "#${palette.base05}";
         text-color = mkLiteral "#${palette.base05}";
-        border-color = mkLiteral ''rgba(${hexToRGBString "," palette.base05}, 0.25)'';
+        border-color = mkLiteral ''rgba(${hexToRGBString "," palette.base0E}, 1)'';
       };
 
       "#window" = {
-        background-color = mkLiteral "transparent";
+        background-color = mkLiteral "rgba(${hexToRGBString "," palette.base00}, 0)";
         text-color = mkLiteral "#${palette.base05}";
       };
 
       "#mainbox" = {
-        background-color = mkLiteral "transparent";
-        spacing = mkLiteral "8px";
+        background-color = mkLiteral "rgba(${hexToRGBString "," palette.base00}, 0)";
+        spacing = mkLiteral "10px";
       };
 
       "#element" = {
         padding = mkLiteral "4px";
-        border-radius = mkLiteral "4px";
+        border-radius = mkLiteral "10px";
       };
 
       "#inputbar" = card // {spacing = mkLiteral "8px";};

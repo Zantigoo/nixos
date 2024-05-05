@@ -15,9 +15,9 @@
     ./gaming
   ];
 
-  xdg.mime.defaultApplications = {
-      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
-  };
+#  xdg.mime.defaultApplications = {
+#      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
+#  };
 
   nix = {
     settings = {
@@ -28,7 +28,7 @@
     gc = {
       automatic = true;
       dates = "daily";
-      options = "--delete-older-than 3d";
+      options = "--delete-older-than 5d";
     };
   };
 
@@ -42,4 +42,5 @@
   services.uptimed.enable = true;
   services.tumbler.enable = true;
   hardware.ckb-next.enable = true;
+  virtualisation.waydroid.enable = true;
 }

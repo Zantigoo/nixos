@@ -44,6 +44,11 @@
 
   services.ollama = {
     enable = true;
+    acceleration = "rocm";
+    environmentVariables = {
+      # Needed to work with 6650XT, change if new GPU. 
+      HSA_OVERRIDE_GFX_VERSION = "10.3.0";
+    };
   };
 
   #programs.thunar = {

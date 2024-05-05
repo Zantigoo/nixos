@@ -8,9 +8,9 @@
       };
 
       colors = with config.colorScheme.palette; {
-        alpha = "0.5";
+        alpha = "1";
         foreground = base05;
-        background = "000000";
+        background = base00;
 
         # regular
         regular0 = base03;

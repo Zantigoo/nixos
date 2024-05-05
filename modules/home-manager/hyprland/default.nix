@@ -34,8 +34,9 @@
       "$terminal" = "foot";
       "$editor" = "nvim";
       "$browser" = "firefox";
-      "$launcher" = "rofi -show drun";
-      "$fileManager" = "thunar";
+      "$launcher" = "rofi -show drun -show-icons";
+      "$calculator" = "rofi -show calc -modi calc -no-show-match -no-sort";      
+      "$fileManager" = "nautilus";
 
       exec-once = [
         "waybar"
@@ -145,7 +146,7 @@
         "$mainMod, q, exec, $browser"
         "$mainMod, d, exec, $launcher"
         "$mainMod, e, exec, $fileManager"
-
+        "$mainMod, Num_lock, exec, $calculator"
         # toggle floating window
         "$mainMod, v, togglefloating"
 
@@ -203,6 +204,8 @@
 
         # Reload AGS
         "CTRL SHIFT, R,  exec, ags -q; ags"
+
+        
       ];
 
       bindm = [

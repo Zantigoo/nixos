@@ -22,8 +22,9 @@
 
   networking.firewall = {
     enable = true;
-    allowedUDPPortRanges = [
+    allowedTCPPorts = [
       53317 #LocalSend
     ];
   };
 
+}

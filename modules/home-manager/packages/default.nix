@@ -5,8 +5,7 @@
     pavucontrol
     easyeffects
     hyprlock
-    localsend
-  
+    handlr
 
     # desktop apps
     bitwarden
@@ -17,10 +16,11 @@
     obsidian
     prismlauncher
     blockbench
+    ungoogled-chromium
+    localsend
 
     # development tools
     vscode
-    putty
 
 
     # compilers and runtimes
@@ -33,8 +33,7 @@
     nodePackages.prettier
     bun
     go
-    
-    
+
   ];
 
 }

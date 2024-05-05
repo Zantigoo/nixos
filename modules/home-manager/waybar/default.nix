@@ -156,7 +156,7 @@
         ];
         "custom/launcher" = {
           "format" = "󰫢 ";
-          #"on-click" = "pkill rofi || ~/.config/rofi/launcher.sh";
+          "on-click" = "rofi -show drun";
           "tooltip" = false;
         };
         "hyprland/window" = {
@@ -199,7 +199,7 @@
         };
         "wireplumber" = {
           "scroll-step" = 1;
-          "format" = "{volume}%";
+          "format" = "{icon} {volume}%";
           "format-muted" = "󰖁 Muted";
           "format-icons" = {
             "default" = [

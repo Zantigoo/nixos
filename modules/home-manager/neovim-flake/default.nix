@@ -4,7 +4,7 @@
   ];
 
   programs.neovim-flake = {
-    enable = true;
+    enable = false;
 
     settings = {
       vim = {

@@ -25,7 +25,7 @@
   # BACKGROUND
   background {
       monitor =
-      path = /home/zantigo/.config/hypr/wallpaper.png
+      path = /home/zantigo/Pictures/Wallpapers/cat-waves.png
       blur_passes = 0
       color = $base
   }

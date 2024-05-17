@@ -33,7 +33,10 @@
   };
 
   # allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    rocmSupport = true;
+  };
 
   # enable additional services
   services.upower.enable = true;

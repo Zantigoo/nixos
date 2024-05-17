@@ -9,11 +9,11 @@
     ./git
     ./keyring
     ./foot
-    ./neovim-flake
+   #./neovim-flake
     ./rofi
     ./gaming
     ./waybar
+    ./wlogout
   ];
 
-  
 }

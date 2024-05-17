@@ -8,6 +8,6 @@
     wayland.enable = true;
 
     # theme
-    theme = "${import ./catppuccin.nix { inherit pkgs; }}";
+    theme = "catppuccin-mocha";
   };
 }

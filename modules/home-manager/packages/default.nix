@@ -6,6 +6,9 @@
     easyeffects
     hyprlock
     handlr
+    p7zip
+    evince
+    gnome.zenity
 
     # desktop apps
     bitwarden
@@ -18,7 +21,12 @@
     blockbench
     ungoogled-chromium
     localsend
+    protontricks
+  
+    gnome.eog
+    zoom-us
 
+    
     # development tools
     vscode
 

@@ -7,11 +7,10 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-    plugins = [ 
-      pkgs.rofi-calc
-      pkgs.rofi-emoji
-    ];
     font = "JetBrains Mono 12";
+    plugins = with pkgs; [
+      rofi-power-menu
+    ];
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
       inherit (inputs.nix-colors.lib-core.conversions) hexToRGBString;

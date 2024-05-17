@@ -32,7 +32,9 @@
     librsvg
     pango
     gnome.nautilus
+    gnome.nautilus-python
     nautilus-open-any-terminal
+
   ];
   programs.gnome-disks.enable = true;
   programs.nautilus-open-any-terminal = {
@@ -50,6 +52,8 @@
       HSA_OVERRIDE_GFX_VERSION = "10.3.0";
     };
   };
+
+
 
   #programs.thunar = {
   #      enable = true;

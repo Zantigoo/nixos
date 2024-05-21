@@ -1,21 +1,16 @@
-# My NixOS config!
+# NixOS Config
 
-My very first NixOS config, I like to keep it simple.
+Private Repo for personal back up.
 
-# Building
+## To Do List
 
-Run this on your first time:
+- Configure wLogout
+- Install Stylix
+- Rofi config
 
-```bash
-git clone https://github.com/rice-cracker-dev/nixos-config ~/nixos && cd ~/nixos
-sudo nixos-rebuild --flake ./#nixos # or . if your user is "nixos"
+## To Build 
 ```
+git clone git clone 
+sudo nixos-rebuild --flake ./#nixos
 
-This config provides aliases to make rebuilding NixOS simpler:
-`nixos-rebuild-flake <config-directory>#default`
-`nixos-update-flake <config-directory>#default`
-
-# Kudos to these folks
-
-- [@vimjoyer](https://www.youtube.com/@vimjoyer) - For your amazing NixOS tutorials.
-- [Hyprland](https://hyprland.org) - For providing an amazing Wayland window manager.
+```

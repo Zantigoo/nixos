@@ -8,9 +8,6 @@
     enable = true;
     package = pkgs.rofi-wayland;
     font = "JetBrains Mono 12";
-    plugins = with pkgs; [
-      rofi-power-menu
-    ];
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
       inherit (inputs.nix-colors.lib-core.conversions) hexToRGBString;

@@ -17,12 +17,9 @@
     obs-studio
     krita
     obsidian
-    prismlauncher
     blockbench
     ungoogled-chromium
     localsend
-    protontricks
-  
     gnome.eog
     zoom-us
 

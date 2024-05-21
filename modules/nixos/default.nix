@@ -39,11 +39,21 @@
   };
 
   # enable additional services
-  services.upower.enable = true;
-  services.gvfs.enable = true;
-  services.flatpak.enable = true;
-  services.uptimed.enable = true;
-  services.tumbler.enable = true;
+
+  services = {
+    upower.enable = true;
+    gvfs.enable = true;
+    flatpak.enable = true;
+    uptimed.enable = true;
+    tumbler.enable = true;
+  };
+
+  security = {
+    sudo.extraConfig = "
+      Defaults timestamp_timeout=20
+    ";
+  };
+
   hardware.ckb-next.enable = true;
   virtualisation.waydroid.enable = true;
 }

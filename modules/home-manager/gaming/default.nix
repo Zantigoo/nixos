@@ -9,5 +9,7 @@
     wineWowPackages.waylandFull
     winetricks
     cockatrice
+    protontricks
+    prismlauncher
   ];
 }

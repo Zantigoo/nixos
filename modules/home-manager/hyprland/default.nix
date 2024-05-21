@@ -15,12 +15,11 @@
     slurp
     imagemagick
     swappy
+    hyprshot
 
     # clipboard
     wl-clipboard
 
-    # brightness control
-    brightnessctl
   ];
 
   
@@ -31,6 +30,7 @@
     settings = with config.colorScheme.palette; {
       # default variables
       "$mainMod" = "SUPER";
+      "$shiftMod" = "SUPER SHIFT";
       "$terminal" = "foot";
       "$editor" = "nvim";
       "$browser" = "firefox";
@@ -70,20 +70,11 @@
       ];
 
       windowrulev2 = [
-        # jetbrains fixes
-        "windowdance, class:^(jetbrains-.*)$, floating:1"
-        "center, class:^(jetbrains-.*)$, title:^(splash)$, floating:1"
-        "nofocus, class:^(jetbrains-.*)$, title:^(splash)$, floating:1"
-        "noborder, class:^(jetbrains-.*)$, title:^(splash)$, floating:1"
-        "center, class:^(jetbrains-.*)$, title:^( )$, floating:1"
-        "stayfocused, class:^(jetbrains-.*)$, title:^( )$, floating:1"
-        "noborder, class:^(jetbrains-.*)$, title:^( )$, floating:1"
-        "nofocus, class:^(jetbrains-.*)$, title:^(win.*)$, floating:1"
-        "noinitialfocus, class:^(jetbrains-.*), title:^(win.*)"
+        # firefox
+        "float, title:^(Picture-in-Picture)$"
 
 
         # steam
-        "float, class:(steam), title:(Steam)"
         "float, class:(steam), title:(Friends List)"
         "nofocus, class:^(steam)$, title:^()$"
       ];
@@ -135,18 +126,18 @@
 
       layerrule = [
         "ignorezero, rofi"
-
-        # ags
-        "ignorezero, ags-*"
+        
       ];
 
       bind = [
+        
         # apps
         "$mainMod, return, exec, $terminal"
         "$mainMod, q, exec, $browser"
         "$mainMod, d, exec, $launcher"
         "$mainMod, e, exec, $fileManager"
-        "$mainMod, Num_lock, exec, $calculator"
+        ##"$mainMod, Num_lock, exec, $calculator"
+        
         # toggle floating window
         "$mainMod, v, togglefloating"
 
@@ -192,9 +183,9 @@
         "$mainMod, mouse_up, workspace, e-1"
 
         # screenshotting
-        ", print, exec, grim - | wl-copy"
-        "CTRL, print, exec, grim -g \"$(slurp)\" - | wl-copy"
-        "ALT, print, exec, grim -g \"$(slurp)\" - | swappy -f -"
+        "$mainMod, PRINT, exec, hyprshot -m region"
+        ", PRINT, exec, hyprshot -m output"
+        "$mainMod SHIFT, PRINT, exec, hyprshot -m window"
 
         # colorpicker
         "$mainMod SHIFT, c, exec, hyprpicker -a"
@@ -202,9 +193,11 @@
         # obs studio pass
         "$mainMod, F6, pass, ^(com\.obsproject\.Studio)$"
 
-        # Reload AGS
-        "CTRL SHIFT, R,  exec, ags -q; ags"
+        # exit shell
+        "$mainMod, Home, exit"
 
+        # pin window
+        "$mainMod, s, pin"
         
       ];
 

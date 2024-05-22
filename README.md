@@ -12,5 +12,4 @@ Private Repo for personal back up.
 ```
 git clone git clone 
 sudo nixos-rebuild --flake ./#nixos
-
 ```

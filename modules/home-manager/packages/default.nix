@@ -21,8 +21,13 @@
     ungoogled-chromium
     localsend
     gnome.eog
-    zoom-us
+    thunderbird
+    protonmail-bridge-gui
+    
 
+    # work shit
+    slack
+    zoom-us
     
     # development tools
     vscode

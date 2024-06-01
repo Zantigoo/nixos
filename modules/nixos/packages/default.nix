@@ -33,14 +33,13 @@
     pango
     gnome.nautilus
     gnome.nautilus-python
-    nautilus-open-any-terminal
-
   ];
+
   programs.gnome-disks.enable = true;
   programs.nautilus-open-any-terminal = {
     enable = true;
-    terminal = "foot";
-   };
+    terminal = "foot"; 
+  };
   programs.nm-applet.enable = true;
 
 

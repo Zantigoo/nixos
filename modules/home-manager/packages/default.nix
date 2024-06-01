@@ -18,11 +18,9 @@
     krita
     obsidian
     blockbench
-    ungoogled-chromium
+    chromium
     localsend
     gnome.eog
-    thunderbird
-    protonmail-bridge-gui
     
 
     # work shit
@@ -35,12 +33,6 @@
 
     # compilers and runtimes
     nodejs
-    node2nix
-    nodePackages.pnpm
-    nodePackages.yarn
-    nodePackages.wrangler
-    nodePackages.eslint
-    nodePackages.prettier
     bun
     go
 

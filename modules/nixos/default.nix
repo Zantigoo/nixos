@@ -48,6 +48,10 @@
     tumbler.enable = true;
   };
 
+  time = {
+    hardwareClockInLocalTime = true;
+  };
+
   security = {
     sudo.extraConfig = "
       Defaults timestamp_timeout=20

@@ -15,7 +15,6 @@
     firefox
     vesktop
     obs-studio
-    krita
     obsidian
     blockbench
     chromium
@@ -25,7 +24,6 @@
 
     # work shit
     slack
-    zoom-us
     
     # development tools
     vscode

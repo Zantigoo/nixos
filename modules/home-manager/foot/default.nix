@@ -4,7 +4,7 @@
 
     settings = {
       main = {
-        font = "JetBrainsMono Nerd Font:size=12";
+        font = "Fira Code:size=12";
       };
 
       colors = with config.colorScheme.palette; {

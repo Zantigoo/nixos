@@ -1,35 +1,106 @@
-{...}:{
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}: {
+  imports = [
+    inputs.anyrun.homeManagerModules.default
+  ];
+
   programs.anyrun = {
     enable = true;
+
     config = {
-      plugins = [
-        # An array of all the plugins you want, which either can be paths to the .so files, or their packages
-        inputs.anyrun.packages.${pkgs.system}.applications
-        ./some_plugin.so
-        "${inputs.anyrun.packages.${pkgs.system}.anyrun-with-all-plugins}/lib/kidex"
+      plugins = with inputs.anyrun.packages.${pkgs.system}; [
+        applications
+        shell
+        translate
+        symbols
       ];
-      x = { fraction = 0.5; };
-      y = { fraction = 0.3; };
-      width = { fraction = 0.3; };
-      hideIcons = false;
-      ignoreExclusiveZones = false;
-      layer = "overlay";
+
+      width.fraction = 0.3;
+      y.absolute = 15;
       hidePluginInfo = false;
-      closeOnClick = false;
-      showResultsImmediately = false;
-      maxEntries = null;
+      closeOnClick = true;
     };
+
     extraCss = ''
-      .some_class {
-        background: red;
-      }
+        * {
+        all: unset;
+        font-size: 1.3rem;
+        }
+
+        #window,
+        #match,
+        #entry,
+        #plugin,
+        #main {
+        background: transparent;
+        }
+
+        #match.activatable {
+        border-radius: 16px;
+        padding: 0.3rem 0.9rem;
+        margin-top: 0.01rem;
+        }
+        #match.activatable:first-child {
+        margin-top: 0.7rem;
+        }
+        #match.activatable:last-child {
+        margin-bottom: 0.6rem;
+        }
+
+        #plugin:hover #match.activatable {
+        border-radius: 10px;
+        padding: 0.3rem;
+        margin-top: 0.01rem;
+        margin-bottom: 0;
+        }
+
+        #match:selected,
+        #match:hover,
+        #plugin:hover {
+        background: rgba(255, 255, 255, 0.1);
+        }
+
+        #entry {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        margin: 0.5rem;
+        padding: 0.3rem 1rem;
+        }
+
+        list > #plugin {
+        border-radius: 16px;
+        margin: 0 0.3rem;
+        }
+        list > #plugin:first-child {
+        margin-top: 0.3rem;
+        }
+        list > #plugin:last-child {
+        margin-bottom: 0.3rem;
+        }
+        list > #plugin:hover {
+        padding: 0.6rem;
+        }
+
+        box#main {
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+            0 0 0 1px rgba(0, 0, 0, 0.5);
+        border-radius: 24px;
+        padding: 0.3rem;
+        }
+    
     '';
 
-    extraConfigFiles."some-plugin.ron".text = ''
+    extraConfigFiles."applications.ron".text = ''
       Config(
-        // for any other plugin
-        // this file will be put in ~/.config/anyrun/some-plugin.ron
-        // refer to docs of xdg.configFile for available options
+        desktop_actions: false,
+        max_entries: 10,
       )
     '';
   };

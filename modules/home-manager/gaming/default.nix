@@ -7,6 +7,7 @@
     # gaming
     lutris
     wineWowPackages.waylandFull
+    wine-wayland
     winetricks
     cockatrice
     protontricks

@@ -20,6 +20,8 @@
     chromium
     localsend
     gnome.eog
+    r2modman
+    
     
 
     # work shit

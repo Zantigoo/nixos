@@ -60,4 +60,6 @@
 
   hardware.ckb-next.enable = true;
   virtualisation.waydroid.enable = true;
+
+  environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
 }

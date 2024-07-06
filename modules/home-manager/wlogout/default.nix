@@ -6,10 +6,16 @@
 } : 
 
 {
-
+    
     programs.wlogout = {
         enable = true;
         layout = [
+            {
+                label = "lock";
+                action = "hyprlock";
+                text = "lock";
+                keybind = "l";
+            }
             {
                 label = "hibernate";
                 action = "systemctl hibernate";
@@ -36,10 +42,35 @@
             }
         ];
         style = ''
-            window { 
-                font-family: JetBrains Mono Nerd Font;
-                font-size: 14pt;
-            }
-        '';
+
+
+        * {
+            background-image: none;
+        }
+
+        window {
+            background-color: rgba(12, 12, 12, 0.75);
+        }
+        button {
+            font-family: "FiraCode";
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #1e1e2e;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 25%;
+            border-color: #cba6f7;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25%;
+            margin: 50px;
+        }
+
+        button:focus, button:active, button:hover {
+            background-color: #cba6f7;
+            outline-style: none;
+            border-color: #1e1e2e;
+        }
+                '';
     };
 }

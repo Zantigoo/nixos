@@ -8,9 +8,9 @@
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprpaper.url = "github:hyprwm/hyprpaper";
     hyprpicker.url = "github:hyprwm/hyprpicker";
+    anyrun.url = "github:anyrun-org/anyrun";
     #ags.url = "github:Aylur/ags";
     #neovim-flake.url = "github:notashelf/neovim-flake";
-    spicetify.url = "github:the-argus/spicetify-nix";
     nix-gaming.url = "github:fufexan/nix-gaming";
 
     home-manager = {

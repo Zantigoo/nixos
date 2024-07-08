@@ -1,4 +1,10 @@
 {pkgs, ...}: {
+
+  imports = [
+    ./btop.nix
+    ./micro.nix
+  ];
+
   home.packages = with pkgs; [
     # desktop utilities
     xarchiver
@@ -8,7 +14,7 @@
     handlr
     p7zip
     evince
-    gnome.zenity
+    zenity
 
     # desktop apps
     bitwarden
@@ -19,7 +25,7 @@
     blockbench
     chromium
     localsend
-    gnome.eog
+    eog
     r2modman
     
     
@@ -37,5 +43,7 @@
     go
 
   ];
+
+
 
 }

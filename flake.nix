@@ -12,7 +12,7 @@
     #ags.url = "github:Aylur/ags";
     #neovim-flake.url = "github:notashelf/neovim-flake";
     nix-gaming.url = "github:fufexan/nix-gaming";
-
+    catppuccin.url = "github:catppuccin/nix";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,6 +28,7 @@
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
+        inputs.catppuccin.nixosModules.catppuccin
       ];
     };
   };

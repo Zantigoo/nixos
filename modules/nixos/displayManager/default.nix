@@ -7,7 +7,10 @@
     # enable experimental wayland support
     wayland.enable = true;
 
-    # theme
-    theme = "catppuccin-mocha";
+    catppuccin = {
+      enable = true;
+      flavor = "mocha";
+
+    };
   };
 }

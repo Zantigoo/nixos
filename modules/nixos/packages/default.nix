@@ -12,7 +12,6 @@
     killall
     tree
     fastfetch
-    btop
     jq
     inotify-tools
     libnotify
@@ -31,8 +30,8 @@
     gsettings-desktop-schemas
     librsvg
     pango
-    gnome.nautilus
-    gnome.nautilus-python
+    nautilus
+    nautilus-python
   ];
 
   programs.gnome-disks.enable = true;

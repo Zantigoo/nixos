@@ -6,8 +6,11 @@
 }: {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
+
+  
   # set global colorscheme
   colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
@@ -42,14 +45,14 @@
   # enable qt
   qt = {
     enable = true;
-
-    # qt platform theme
-    platformTheme.name = "gtk";
-
-    # qt style
+    platformTheme.name = "kvantum";
     style = {
-      name = "adwaita-dark";
-      package = pkgs.adwaita-qt;
+      name = "kvantum";
+      catppuccin = {
+        enable = true;
+        accent = "mauve";
+        flavor = "mocha";
+      };
     };
   };
 
@@ -58,20 +61,19 @@
     enable = true;
 
     # gtk theme
-      theme = {
-        name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-        package = pkgs.catppuccin-gtk.override {
-          accents = ["mauve"];
-          size = "standard";
-          tweaks = ["normal"];
-          variant = "mocha";
-        };
-      };
-
-    # gtk icon theme
-    iconTheme = {
-      package = pkgs.papirus-icon-theme;
-      name = "Papirus-Dark";
+    catppuccin = {
+      enable = true;
+      accent = "mauve";
+      flavor = "mocha";
+      size = "compact";
     };
+
+    catppuccin.icon = {
+      enable = true;
+      accent = "mauve";
+      flavor = "mocha";
+    };
+
+    
   };
 }

@@ -3,6 +3,7 @@
   imports = [
     ./btop.nix
     ./micro.nix
+    ./fzf.nix
   ];
 
   home.packages = with pkgs; [

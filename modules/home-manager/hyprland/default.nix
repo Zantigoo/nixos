@@ -16,6 +16,7 @@
     imagemagick
     swappy
     hyprshot
+    hyprnome
 
     # clipboard
     wl-clipboard
@@ -37,6 +38,7 @@
       "$launcher" = "rofi -show drun -show-icons";
       "$calculator" = "rofi -show calc -modi calc -no-show-match -no-sort";      
       "$fileManager" = "nautilus";
+      "$taskManager" = "btop";
 
       exec-once = [
         "waybar"
@@ -149,6 +151,7 @@
 
         # lock Hyprland
         "$mainMod, l, exec, hyprlock"
+        "$mainMod, ESCAPE, exec, wlogout"
 
         # move focus
         "$mainMod, left, movefocus, l"
@@ -190,15 +193,11 @@
         # colorpicker
         "$mainMod SHIFT, c, exec, hyprpicker -a"
 
-        # obs studio pass
-        "$mainMod, F6, pass, ^(com\.obsproject\.Studio)$"
-
-        # exit shell
-        "$mainMod, Home, exit"
-
         # pin window
         "$mainMod, s, pin"
         
+        # open btop
+   
       ];
 
       bindm = [

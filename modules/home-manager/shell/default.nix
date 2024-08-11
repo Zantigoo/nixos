@@ -20,8 +20,7 @@
     settings = {
       add_newline = true;
       format = lib.concatStrings [
-        "$line_break"
-        "$package"
+        "$all"
         "$line_break"
         "$character"
       ];

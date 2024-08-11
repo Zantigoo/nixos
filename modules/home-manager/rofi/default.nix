@@ -5,7 +5,7 @@
   ...
 }: {
   programs.rofi = {
-    enable = true;
+    enable = false;
     package = pkgs.rofi-wayland;
     font = "JetBrains Mono 12";
     theme = let

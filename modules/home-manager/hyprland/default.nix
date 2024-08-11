@@ -10,17 +10,18 @@
   ];
 
   home.packages = with pkgs; [
+
     # screen capturing
     grim
     slurp
     imagemagick
     swappy
+
     hyprshot
     hyprnome
 
-    # clipboard
+    clipse
     wl-clipboard
-
   ];
 
   
@@ -35,17 +36,16 @@
       "$terminal" = "foot";
       "$editor" = "nvim";
       "$browser" = "firefox";
-      "$launcher" = "rofi -show drun -show-icons";
-      "$calculator" = "rofi -show calc -modi calc -no-show-match -no-sort";      
+      "$launcher" = "anyrun";   
       "$fileManager" = "nautilus";
       "$taskManager" = "btop";
 
       exec-once = [
         "waybar"
         "hyprpaper"
-        "ags"
         "mako"
         "blueman-applet"
+        "clipse -listen"
       ];
 
       env = [
@@ -79,6 +79,8 @@
         # steam
         "float, class:(steam), title:(Friends List)"
         "nofocus, class:^(steam)$, title:^()$"
+        "float, class:(clipse)"
+        "size 622 652,class:(clipse)"
       ];
 
       monitor = [
@@ -140,6 +142,9 @@
         "$mainMod, e, exec, $fileManager"
         ##"$mainMod, Num_lock, exec, $calculator"
         
+        "$mainMod, F, fullscreen, 0"
+
+
         # toggle floating window
         "$mainMod, v, togglefloating"
 
@@ -160,30 +165,40 @@
         "$mainMod, down, movefocus, d"
 
         # switch workspaces
-        "$mainMod, 1, workspace, 1"
-        "$mainMod, 2, workspace, 2"
-        "$mainMod, 3, workspace, 3"
-        "$mainMod, 4, workspace, 4"
-        "$mainMod, 5, workspace, 5"
-        "$mainMod, 6, workspace, 6"
-        "$mainMod, 7, workspace, 7"
-        "$mainMod, 8, workspace, 8"
-        "$mainMod, 9, workspace, 9"
+        #"$mainMod, 1, workspace, 1"
+        #"$mainMod, 2, workspace, 2"
+        #"$mainMod, 3, workspace, 3"
+        #"$mainMod, 4, workspace, 4"
+        #"$mainMod, 5, workspace, 5"
+        #"$mainMod, 6, workspace, 6"
+        #"$mainMod, 7, workspace, 7"
+        #"$mainMod, 8, workspace, 8"
+        #"$mainMod, 9, workspace, 9"
+
+        
 
         # move active window to workspace
-        "$mainMod SHIFT, 1, movetoworkspace, 1"
-        "$mainMod SHIFT, 2, movetoworkspace, 2"
-        "$mainMod SHIFT, 3, movetoworkspace, 3"
-        "$mainMod SHIFT, 4, movetoworkspace, 4"
-        "$mainMod SHIFT, 5, movetoworkspace, 5"
-        "$mainMod SHIFT, 6, movetoworkspace, 6"
-        "$mainMod SHIFT, 7, movetoworkspace, 7"
-        "$mainMod SHIFT, 8, movetoworkspace, 8"
-        "$mainMod SHIFT, 9, movetoworkspace, 9"
+        #"$mainMod SHIFT, 1, movetoworkspace, 1"
+        #"$mainMod SHIFT, 2, movetoworkspace, 2"
+        #"$mainMod SHIFT, 3, movetoworkspace, 3"
+        #"$mainMod SHIFT, 4, movetoworkspace, 4"
+        #"$mainMod SHIFT, 5, movetoworkspace, 5"
+        #"$mainMod SHIFT, 6, movetoworkspace, 6"
+        #"$mainMod SHIFT, 7, movetoworkspace, 7"
+        #"$mainMod SHIFT, 8, movetoworkspace, 8"
+        #"$mainMod SHIFT, 9, movetoworkspace, 9"
 
         # scroll through workspaces
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
+
+        #Hyprnome Switching
+        "SUPER, 1, exec, hyprnome --previous"
+        "SUPER, 2, exec, hyprnome"
+        "SUPER_SHIFT, 1, exec, hyprnome --previous --move"
+        "SUPER_SHIFT, 2, exec, hyprnome --move"
+        "SUPER, TAB, exec, hyprnome --cycle"
+  
 
         # screenshotting
         "$mainMod, PRINT, exec, hyprshot -m region"
@@ -196,7 +211,7 @@
         # pin window
         "$mainMod, s, pin"
         
-        # open btop
+        "$shiftMod, v, exec, $terminal clipse"
    
       ];
 
@@ -216,6 +231,11 @@
         ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         ", XF86MonBrightnessUp, exec, brightnessctl set +5%"
       ];
+
+      misc = {
+        force_default_wallpaper = 0;
+        disable_hyprland_logo = true;
+      };
     };
   };
 }

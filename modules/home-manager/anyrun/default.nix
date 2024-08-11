@@ -14,13 +14,13 @@
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
+        rink
         shell
         translate
-        symbols
       ];
 
       width.fraction = 0.3;
-      y.absolute = 15;
+      y.absolute = 70;
       hidePluginInfo = false;
       closeOnClick = true;
     };
@@ -29,15 +29,9 @@
         * {
         all: unset;
         font-size: 1.3rem;
+        font-family: 'Fira Code';
         }
 
-        #window,
-        #match,
-        #entry,
-        #plugin,
-        #main {
-        background: transparent;
-        }
 
         #match.activatable {
         border-radius: 16px;

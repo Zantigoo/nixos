@@ -6,10 +6,10 @@ Private Repo for personal back up.
 
 - Configure wLogout
 - Install Stylix
-- Rofi config
+- Config Hyprpanel
 
 ## To Build 
 ```
-git clone git clone 
+git clone  
 sudo nixos-rebuild --flake ./#nixos
 ```

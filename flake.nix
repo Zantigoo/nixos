@@ -9,7 +9,6 @@
     hyprpaper.url = "github:hyprwm/hyprpaper";
     hyprpicker.url = "github:hyprwm/hyprpicker";
     anyrun.url = "github:anyrun-org/anyrun";
-    #ags.url = "github:Aylur/ags";
     #neovim-flake.url = "github:notashelf/neovim-flake";
     nix-gaming.url = "github:fufexan/nix-gaming";
     catppuccin.url = "github:catppuccin/nix";
@@ -20,7 +19,7 @@
     };
   };
 
-  outputs = {nixpkgs, ...} @ inputs: 
+  outputs = {self, nixpkgs, ...} @ inputs: 
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {

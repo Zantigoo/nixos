@@ -9,21 +9,6 @@
     ./hyprpicker.nix
   ];
 
-  home.packages = with pkgs; [
-
-    # screen capturing
-    grim
-    slurp
-    imagemagick
-    swappy
-
-    hyprshot
-    hyprnome
-
-    clipse
-    wl-clipboard
-  ];
-
   
 
   wayland.windowManager.hyprland = {
@@ -41,9 +26,7 @@
       "$taskManager" = "btop";
 
       exec-once = [
-        "waybar"
-        "hyprpaper"
-        "mako"
+        "hyprpanel"
         "blueman-applet"
         "clipse -listen"
       ];

@@ -18,8 +18,11 @@
     openssl
     pandoc
     unrar
+    brightnessctl
 
-    # gtk
+    #dependants
+    zenity
+    evince
     glib
     gobject-introspection
     gtk3
@@ -32,6 +35,7 @@
     pango
     nautilus
     nautilus-python
+        
   ];
 
   programs.gnome-disks.enable = true;

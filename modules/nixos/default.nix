@@ -1,4 +1,4 @@
-{...}: {
+{inputs, system, ...}: {
   imports = [
     ../default.nix
     ./sound
@@ -36,6 +36,10 @@
     rocmSupport = true;
   };
 
+  nixpkgs.overlays = [
+    inputs.hyprpanel.overlay."x86_64-linux"
+  ];
+
   # enable additional services
 
   services = {
@@ -60,4 +64,6 @@
   virtualisation.waydroid.enable = true;
 
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
+
+
 }

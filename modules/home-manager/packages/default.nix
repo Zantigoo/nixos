@@ -11,11 +11,8 @@
     xarchiver
     pavucontrol
     easyeffects
-    hyprlock
     handlr
     p7zip
-    evince
-    zenity
 
     # desktop apps
     bitwarden
@@ -28,8 +25,26 @@
     localsend
     eog
     r2modman
+
+
+    # screen capturing
+    grim
+    slurp
+    imagemagick
+    swappy
+    gpu-screen-recorder
+
+    #hypr utils
+
+    hyprshot
+    hyprnome
+    hyprlock
+    hyprpanel
     
-    
+    #clipboard
+
+    clipse
+    wl-clipboard
 
     # work shit
     slack

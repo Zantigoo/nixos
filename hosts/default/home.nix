@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, system, ... }:
 
 {
   imports = [
@@ -21,4 +21,6 @@
   
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+
 }

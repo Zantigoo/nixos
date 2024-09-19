@@ -10,7 +10,6 @@
     # desktop utilities
     xarchiver
     pavucontrol
-    easyeffects
     handlr
     p7zip
 
@@ -25,6 +24,7 @@
     localsend
     eog
     r2modman
+    heroic
 
 
     # screen capturing

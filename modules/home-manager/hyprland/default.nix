@@ -62,6 +62,8 @@
         # steam
         "float, class:(steam), title:(Friends List)"
         "nofocus, class:^(steam)$, title:^()$"
+
+        #clipse
         "float, class:(clipse)"
         "size 622 652,class:(clipse)"
       ];
@@ -121,7 +123,7 @@
         # apps
         "$mainMod, return, exec, $terminal"
         "$mainMod, q, exec, $browser"
-        "$mainMod, d, exec, $launcher"
+        "$mainMod, space, exec, $launcher"
         "$mainMod, e, exec, $fileManager"
         ##"$mainMod, Num_lock, exec, $calculator"
         

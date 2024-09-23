@@ -19,13 +19,13 @@
     };
   };
 
-  outputs = {self, nixpkgs, ...} @ inputs: 
+  outputs = {self, nixpkgs, ...} @ inputs:  
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
       overlays = [
-        inputs.hyprpanel.overlay.${system}
+        inputs.hyprpanel.overlay
       ];
     };
   in {

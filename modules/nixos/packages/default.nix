@@ -19,6 +19,7 @@
     pandoc
     unrar
     brightnessctl
+    hyprpanel
 
     #dependants
     zenity

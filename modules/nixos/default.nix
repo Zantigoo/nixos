@@ -1,4 +1,4 @@
-{inputs, system, ...}: {
+{inputs, system, pkgs, ...}: {
   imports = [
     ../default.nix
     ./sound
@@ -36,6 +36,7 @@
     rocmSupport = true;
   };
 
+  
   nixpkgs.overlays = [
     inputs.hyprpanel.overlay."x86_64-linux"
   ];
@@ -52,6 +53,13 @@
 
   time = {
     hardwareClockInLocalTime = true;
+  };
+
+  hardware.bluetooth.settings = {
+    General = {
+      Disable = "Handsfree";
+      Experimental = true;
+    };
   };
 
   security = {

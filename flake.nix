@@ -24,13 +24,14 @@
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
+      config.allowUnfree = true;
       overlays = [
         inputs.hyprpanel.overlay
       ];
     };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
+      specialArgs = {inherit system inputs pkgs;};
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default

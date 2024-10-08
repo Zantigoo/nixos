@@ -24,7 +24,8 @@
     localsend
     eog
     r2modman
-    heroic
+    itch
+
 
 
     # screen capturing
@@ -39,7 +40,6 @@
     hyprshot
     hyprnome
     hyprlock
-    hyprpanel
     
     #clipboard
 

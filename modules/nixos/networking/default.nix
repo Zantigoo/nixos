@@ -1,6 +1,9 @@
 { ... }:
 
 {
+    imports = [
+    ./syncthing.nix
+  ];
   # enable usb modeswitch (for android usb tethering)
   hardware.usb-modeswitch.enable = true;
 
@@ -18,7 +21,6 @@
       
     };
    };
-  services.blueman.enable = true;
 
   networking.firewall = {
     enable = true;

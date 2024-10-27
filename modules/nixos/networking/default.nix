@@ -17,6 +17,7 @@
     settings = {
       General = {
         MultiProfile = "multiple";
+        Disable = "Headset";
       };
       
     };

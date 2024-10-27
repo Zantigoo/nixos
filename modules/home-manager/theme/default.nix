@@ -55,7 +55,12 @@
       };
     };
   };
-
+  # set pref dark theme
+  dconf.settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+      };
+  };
   # enable gtk
   gtk = {
     enable = true;

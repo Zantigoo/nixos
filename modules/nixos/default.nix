@@ -55,12 +55,6 @@
     hardwareClockInLocalTime = true;
   };
 
-  hardware.bluetooth.settings = {
-    General = {
-      Disable = "Handsfree";
-      Experimental = true;
-    };
-  };
 
   security = {
     sudo.extraConfig = "

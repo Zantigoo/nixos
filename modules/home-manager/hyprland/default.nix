@@ -136,8 +136,9 @@
         # close active window
         "$mainMod, c, killactive"
 
-        # close hyprland session
-        "$mainMod, m, exit"
+        # control scratch pad
+        "$mainMod, x, togglespecialworkspace"
+        "SUPER_SHIFT, x, movetoworkspace, special"
 
         # lock Hyprland
         "$mainMod, l, exec, hyprlock"
@@ -183,11 +184,12 @@
         "SUPER_SHIFT, 1, exec, hyprnome --previous --move"
         "SUPER_SHIFT, 2, exec, hyprnome --move"
         "SUPER, TAB, exec, hyprnome --cycle"
-  
+        
+        #
 
         # screenshotting
-        "$mainMod, PRINT, exec, hyprshot -m region"
-        ", PRINT, exec, hyprshot -m output"
+        ",PRINT, exec, hyprshot -m region"
+        "$mainMod, PRINT, exec, hyprshot -m output"
         "$mainMod SHIFT, PRINT, exec, hyprshot -m window"
 
         # colorpicker

@@ -23,8 +23,7 @@
     chromium
     localsend
     eog
-    r2modman
-    itch
+
 
 
 

@@ -13,7 +13,7 @@
 
   programs.waybar = {
 
-    enable = true;
+    enable = false;
 
     style = ''
       @import "mocha.css";

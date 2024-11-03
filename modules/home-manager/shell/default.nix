@@ -1,6 +1,6 @@
 {lib, ...}: {
-  # zsh
-  programs.zsh = {
+  # zsh 
+  programs.zsh = { 
     # enable zsh
     enable = true;
 
@@ -26,8 +26,8 @@
       ];
       scan_timeout = 10;
       character = {
-        success_symbol = "➜";
-        error_symbol = "➜";
+        success_symbol = "⮕";
+        error_symbol = "⮕";
       };
     };
   };

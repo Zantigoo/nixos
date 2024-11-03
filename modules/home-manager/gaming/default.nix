@@ -12,5 +12,8 @@
     cockatrice
     protontricks
     prismlauncher
+    bottles
+    r2modman
+    itch
   ];
 }

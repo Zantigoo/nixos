@@ -18,7 +18,7 @@
       # default variables
       "$mainMod" = "SUPER";
       "$shiftMod" = "SUPER SHIFT";
-      "$terminal" = "foot";
+      "$terminal" = "kitty";
       "$editor" = "nvim";
       "$browser" = "firefox";
       "$launcher" = "anyrun";   

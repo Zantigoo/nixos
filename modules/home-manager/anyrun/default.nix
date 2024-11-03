@@ -14,15 +14,17 @@
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
+        symbols
         rink
         shell
         translate
       ];
-
+      showResultsImmediately = false;
       width.fraction = 0.3;
       y.absolute = 70;
       hidePluginInfo = false;
       closeOnClick = true;
+      maxEntries = 30;
     };
 
     extraCss = ''

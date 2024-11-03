@@ -28,8 +28,11 @@
     gc = {
       automatic = true;
       dates = "weekly";
+      options = "--delete-older-than 30d";
     };
   };
+
+  boot.loader.grub.configurationLimit = 5;
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -37,9 +40,6 @@
   };
 
   
-  nixpkgs.overlays = [
-    inputs.hyprpanel.overlay."x86_64-linux"
-  ];
 
   # enable additional services
 

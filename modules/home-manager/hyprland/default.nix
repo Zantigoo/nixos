@@ -59,6 +59,7 @@
         "float, title:^(Picture-in-Picture)$"
 
 
+
         # steam
         "float, class:(steam), title:(Friends List)"
         "nofocus, class:^(steam)$, title:^()$"
@@ -194,11 +195,11 @@
 
         # colorpicker
         "$mainMod SHIFT, c, exec, hyprpicker -a"
-
+        
         # pin window
         "$mainMod, s, pin"
-        
-        "$shiftMod, v, exec, $terminal clipse"
+        #open clipboard
+        "SUPER CTRL, v, exec, $terminal --class clipse -e 'clipse'"
    
       ];
 

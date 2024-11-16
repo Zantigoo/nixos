@@ -23,6 +23,9 @@
     chromium
     localsend
     eog
+    gnome-text-editor
+    krita
+    aseprite
 
 
 

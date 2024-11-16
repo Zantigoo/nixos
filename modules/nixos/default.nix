@@ -19,7 +19,7 @@
 #      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
 #  };
 
-  nix = {
+nix = {
     settings = {
       experimental-features = ["nix-command" "flakes"];
       auto-optimise-store = true;
@@ -28,11 +28,17 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 30d";
+      options = "--delete-older-than 10d";
     };
   };
 
-  boot.loader.grub.configurationLimit = 5;
+  boot = {
+    loader.grub.configurationLimit = 5;
+    supportedFilesystems = {
+      ntfs = true;
+    };
+  };
+
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -62,10 +68,13 @@
     ";
   };
 
+  
   hardware.ckb-next.enable = true;
   virtualisation.waydroid.enable = true;
 
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
-
+  environment.sessionVariables = {
+    HYPRSHOT_DIR = "/home/zantigo/Pictures/Clips/Screenshots";
+  };
 
 }

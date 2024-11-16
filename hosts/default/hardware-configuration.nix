@@ -18,6 +18,11 @@
       fsType = "ext4";
     };
 
+  fileSystems."/run/media/zantigo/Storage" =
+    { device = "/dev/disk/by-uuid/2a774b6e-6004-42e7-831c-900947401274";
+      fsType = "ext4";
+    };
+
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/9F83-555C";
       fsType = "vfat";

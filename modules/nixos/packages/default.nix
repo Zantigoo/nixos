@@ -20,6 +20,8 @@
     unrar
     brightnessctl
     hyprpanel
+    pulseaudio
+    blueman
 
     #dependants
     zenity
@@ -42,7 +44,7 @@
   programs.gnome-disks.enable = true;
   programs.nautilus-open-any-terminal = {
     enable = true;
-    terminal = "foot"; 
+    terminal = "kitty"; 
   };
   programs.nm-applet.enable = true;
 

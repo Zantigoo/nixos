@@ -10,12 +10,9 @@
         enable = true;
         
         catppuccin = {
-            enable = false; #Fucking Opposite day I guess
+            enable = true;
             flavor = "mocha";
         };
 
-        settings = {
-            colorscheme = "";
-        };
     };
 }

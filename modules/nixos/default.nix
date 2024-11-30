@@ -68,6 +68,14 @@ nix = {
     ";
   };
 
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
   
   hardware.ckb-next.enable = true;
   virtualisation.waydroid.enable = true;

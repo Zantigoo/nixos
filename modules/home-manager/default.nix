@@ -10,7 +10,6 @@
     ./git
     ./keyring
     ./foot
-   #./neovim-flake
     ./rofi
     ./gaming
     ./waybar

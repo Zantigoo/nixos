@@ -1,6 +1,9 @@
 {...}: {
   programs.mangohud = {
-    enable = true;
+    enable = false;
     enableSessionWide = true;
+    settings = {
+      blacklist = "nautilus";
+    };
   };
 }

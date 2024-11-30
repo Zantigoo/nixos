@@ -26,7 +26,7 @@
     gnome-text-editor
     krita
     aseprite
-
+    nexusmods-app-unfree
 
 
 
@@ -62,6 +62,6 @@
 
   ];
 
-
+  
 
 }

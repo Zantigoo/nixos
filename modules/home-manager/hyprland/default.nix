@@ -99,13 +99,6 @@
       decoration = {
         rounding = "8";
 
-        drop_shadow = "false";
-        # shadow_range = "4";
-        # shadow_render_power = "3";
-        # "col.shadow" = "rgba(1a1a1aee)";
-
-        # dim_inactive = "true";
-
         blur = {
           enabled = "true";
           size = "8";

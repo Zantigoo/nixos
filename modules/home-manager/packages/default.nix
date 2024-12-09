@@ -4,6 +4,8 @@
     ./btop.nix
     ./micro.nix
     ./fzf.nix
+    ./helix.nix
+    ./yazi.nix
   ];
 
   home.packages = with pkgs; [
@@ -16,6 +18,7 @@
     # desktop apps
     bitwarden
     firefox
+    vivaldi
     vesktop
     obs-studio
     obsidian
@@ -26,8 +29,9 @@
     gnome-text-editor
     krita
     aseprite
-    nexusmods-app-unfree
-
+    slack
+    
+    # terminal time
 
 
     # screen capturing
@@ -47,9 +51,6 @@
 
     clipse
     wl-clipboard
-
-    # work shit
-    slack
     
     # development tools
     vscode

@@ -24,6 +24,7 @@
       "$launcher" = "anyrun";   
       "$fileManager" = "nautilus";
       "$taskManager" = "btop";
+      "$powermenu" = "hyprpanel -t powerdropdownmenu";
 
       exec-once = [
         "hyprpanel"
@@ -136,7 +137,7 @@
 
         # lock Hyprland
         "$mainMod, l, exec, hyprlock"
-        "$mainMod, ESCAPE, exec, wlogout"
+        "$mainMod, ESCAPE, exec, $powermenu"
 
         # move focus
         "$mainMod, left, movefocus, l"

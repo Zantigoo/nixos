@@ -4,17 +4,10 @@
 
   # packages
   fonts.packages = with pkgs; [
-    # fonts
-    jetbrains-mono
     fira-code
-
-    # nerd font
-    (nerdfonts.override {
-      fonts = [
-        "NerdFontsSymbolsOnly"
-        "JetBrainsMono"
-
-      ];
-    })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.fira-code
   ];
 }

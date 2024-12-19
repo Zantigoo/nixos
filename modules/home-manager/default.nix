@@ -1,7 +1,7 @@
 {...}: {
   imports = [
     ../default.nix
-    ./anyrun
+    #./anyrun
     ./options
     ./hyprland
     ./theme
@@ -9,12 +9,13 @@
     ./packages
     ./git
     ./keyring
-    ./foot
-    ./rofi
+    #./foot
+    #./rofi
     ./gaming
-    ./waybar
-    ./wlogout
+    #./waybar
+    #./wlogout
     ./kitty
+    ./walker
   ];
 
 }

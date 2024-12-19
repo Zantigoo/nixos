@@ -13,6 +13,7 @@
     nix-gaming.url = "github:fufexan/nix-gaming";
     catppuccin.url = "github:catppuccin/nix";
     hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
+    walker.url = "github:abenz1267/walker";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

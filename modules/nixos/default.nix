@@ -68,16 +68,16 @@ nix = {
     ";
   };
 
-  services.udev.packages = [
-    pkgs.android-udev-rules
-  ];
+
+  programs.adb.enable = true;
+  users.users.zantigo.extraGroups = ["adbusers"];
 
   programs.appimage = {
     enable = true;
     binfmt = true;
   };
   
-  hardware.ckb-next.enable = true;
+  hardware.ckb-next.enable = false;
   virtualisation.waydroid.enable = true;
 
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";

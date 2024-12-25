@@ -30,6 +30,7 @@
         "hyprpanel"
         "blueman-applet"
         "clipse -listen"
+        #"walker --gapplication-service"
       ];
 
       env = [

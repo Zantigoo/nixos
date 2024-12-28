@@ -18,7 +18,6 @@
     # desktop apps
     bitwarden
     firefox
-    vivaldi
     vesktop
     obs-studio
     obsidian
@@ -62,7 +61,5 @@
     go
 
   ];
-
-  
 
 }

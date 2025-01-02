@@ -13,6 +13,7 @@
     ./plymouth
     ./ssh
     ./gaming
+    ./theme
   ];
 
 #  xdg.mime.defaultApplications = {

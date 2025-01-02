@@ -14,7 +14,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
 
-    settings = with config.colorScheme.palette; {
+    settings = {
       # default variables
       "$mainMod" = "SUPER";
       "$shiftMod" = "SUPER SHIFT";
@@ -76,6 +76,15 @@
         "DP-2, 1920x1080, -1920x0, 1"
       ];
 
+      workspace = [
+        "1,monitor:DP-1"
+        "2,monitor:DP-2"
+        "3,monitor:DP-1"
+        "4,monitor:DP-2"
+        "5,monitor:DP-1"
+        "6,monitor:DP-2"
+      ];
+
       input = {
         sensitivity = "0";
         accel_profile = "flat";
@@ -92,8 +101,8 @@
         gaps_out = "15";
 
         border_size = "5";
-        "col.inactive_border" = "0x40${base05}";
-        "col.active_border" = "0xff${base0E}";
+        "col.inactive_border" = "0x44cdd6f4";
+        "col.active_border" = "0xffcba6f7";
 
         layout = "dwindle";
       };
@@ -174,14 +183,28 @@
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
 
+        "$mainMod, 1, workspace, r-1"
+        "$mainMod, 2, workspace, r+1"
+
+        "$mainMod SHIFT, 1, movetoworkspace, r-1"
+        "$mainMod SHIFT, 2, movetoworkspace, r+1"
+
+        "$mainMod, TAB, workspace, m+1"
+        "$mainMod SHIFT, TAB, movetoworkspace, m+1"
+        #"ALT, TAB, swapactiveworkspaces DP-1 DP-2"
+        
+
+
+
         #Hyprnome Switching
+        /*
         "SUPER, 1, exec, hyprnome --previous"
         "SUPER, 2, exec, hyprnome"
         "SUPER_SHIFT, 1, exec, hyprnome --previous --move"
         "SUPER_SHIFT, 2, exec, hyprnome --move"
         "SUPER, TAB, exec, hyprnome --cycle"
+        */
         
-        #
 
         # screenshotting
         ",PRINT, exec, hyprshot -m region"

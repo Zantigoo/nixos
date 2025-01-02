@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   imports = [
     ./fonts.nix
+    ./syncthing.nix
+    ./ollama.nix
   ];
 
   # system packages
@@ -38,6 +40,7 @@
     pango
     nautilus
     nautilus-python
+    papirus-icon-theme
         
   ];
 
@@ -47,17 +50,6 @@
     terminal = "kitty"; 
   };
   programs.nm-applet.enable = true;
-
-
-  services.ollama = {
-    enable = true;
-    acceleration = "rocm";
-    environmentVariables = {
-      # Needed to work with 6650XT
-      HSA_OVERRIDE_GFX_VERSION = "10.3.0";
-    };
-  };
-
 
 
   #programs.thunar = {

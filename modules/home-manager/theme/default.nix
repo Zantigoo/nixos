@@ -4,15 +4,32 @@
   config,
   ...
 }: {
-  imports = [
-    inputs.nix-colors.homeManagerModules.default
-    inputs.catppuccin.homeManagerModules.catppuccin
-  ];
 
+  stylix = {
+    enable = true;
+    autoEnable = false;
+    image = ./wall2.png;
+    polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    cursor = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Classic";
+      size = 24;
+    };
 
-  
-  # set global colorscheme
-  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
+    targets = {
+      gtk.enable = true;
+      gnome.enable = true;
+      hyprland.enable = false;
+      kde.enable = true;
+    };
+
+    iconTheme = {
+      enable = true;
+      package = pkgs.papirus-icon-theme;
+      dark = "Papirus-Dark";
+    };
+  };
 
   # Catpuccin-Mocha Cheat Sheet
   # base00: "1e1e2e" # base
@@ -34,10 +51,6 @@
 
   # cursor
   home.pointerCursor = {
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 24;
-
     # enable gtk
     gtk.enable = true;
   };
@@ -48,37 +61,38 @@
     platformTheme.name = "kvantum";
     style = {
       name = "kvantum";
-      catppuccin = {
+     /* catppuccin = {
         enable = true;
         accent = "mauve";
         flavor = "mocha";
-      };
+      };*/
     };
   };
   # set pref dark theme
-  dconf.settings = {
+  /*dconf.settings = {
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
       };
-  };
+  };*/
   # enable gtk
   gtk = {
     enable = true;
 
     # gtk theme
-    catppuccin = {
+    /*catppuccin = {
       enable = true;
       accent = "mauve";
       flavor = "mocha";
       size = "compact";
-    };
+    };*/
 
-    catppuccin.icon = {
+    /*catppuccin.icon = {
       enable = true;
       accent = "mauve";
       flavor = "mocha";
-    };
+    };*/
 
-    
   };
+
+
 }

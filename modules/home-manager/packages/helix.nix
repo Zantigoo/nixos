@@ -10,9 +10,5 @@
         enable = true;
         defaultEditor = false;
         
-        catppuccin = {
-            enable = true;
-            flavor = "mocha";
-        };
     };
 }

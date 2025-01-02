@@ -11,9 +11,10 @@
     anyrun.url = "github:anyrun-org/anyrun";
     #neovim-flake.url = "github:notashelf/neovim-flake";
     nix-gaming.url = "github:fufexan/nix-gaming";
-    catppuccin.url = "github:catppuccin/nix";
+    #catppuccin.url = "github:catppuccin/nix";
     hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     walker.url = "github:abenz1267/walker";
+    stylix.url = "github:danth/stylix";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,7 +37,8 @@
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
-        inputs.catppuccin.nixosModules.catppuccin
+        #inputs.catppuccin.nixosModules.catppuccin
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };

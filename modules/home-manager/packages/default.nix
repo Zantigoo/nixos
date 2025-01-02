@@ -43,7 +43,6 @@
     #hypr utils
 
     hyprshot
-    hyprnome
     hyprlock
     
     #clipboard

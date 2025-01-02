@@ -7,6 +7,7 @@
 
   stylix = {
     enable = true;
+    autoEnable = false;
     image = ./wall2.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     targets = {
@@ -17,6 +18,8 @@
       };
       gtk.enable = true;
       plymouth.enable = true;
+      
+
 
     };
   };

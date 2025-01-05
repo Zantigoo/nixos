@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   config,
   ...
@@ -102,7 +103,7 @@
 
         border_size = "5";
         "col.inactive_border" = "0x44cdd6f4";
-        "col.active_border" = "0xffcba6f7";
+        "col.active_border" = "0xfffab387";
 
         layout = "dwindle";
       };

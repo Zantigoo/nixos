@@ -14,7 +14,6 @@
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
-        symbols
         rink
         shell
         translate
@@ -30,7 +29,7 @@
     extraCss = ''
         * {
         all: unset;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: 'Fira Code';
         }
 
@@ -47,7 +46,7 @@
         margin-bottom: 0.6rem;
         }
 
-        #plugin:hover #match.activatable {
+        #match.activatable {
         border-radius: 10px;
         padding: 0.3rem;
         margin-top: 0.01rem;
@@ -55,23 +54,25 @@
         }
 
         #match:selected,
-        #match:hover,
-        #plugin:hover {
-         background: #cba6f7;
+        #match:hover {
+         background: #fab387;
          color:#1e1e2e;
         }
 
         #entry {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #313244;
+        border: 1px solidrgba(249, 225, 175, 0.49);
         border-radius: 16px;
         margin: 0.5rem;
         padding: 0.3rem 1rem;
         }
 
         list > #plugin {
+        background: #1e1e2e;
         border-radius: 16px;
-        margin: 0 0.3rem;
+        padding: 1rem;
+
+        margin: 0.5rem;
         }
         list > #plugin:first-child {
         margin-top: 0.3rem;
@@ -79,13 +80,11 @@
         list > #plugin:last-child {
         margin-bottom: 0.3rem;
         }
-        list > #plugin:hover {
-        padding: 0.6rem;
-        }
 
         box#main {
-        background: #1e1e2e;
-        border-radius: 24px;
+        background: #181825;
+        border: solid 1px #fab387;
+        border-radius: 16px;
         padding: 0.3rem;
         }
     

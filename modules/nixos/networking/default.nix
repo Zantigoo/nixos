@@ -4,7 +4,10 @@
 
   # enable usb modeswitch (for android usb tethering)
   hardware.usb-modeswitch.enable = true;
-
+  
+  # for Flipper over USB
+  hardware.flipperzero.enable = true;
+  
   # enable networking
   networking.networkmanager.enable = true; 
   networking.hostName = "Library"; # Define your hostname.

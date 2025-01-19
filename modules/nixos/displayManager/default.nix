@@ -8,6 +8,6 @@
 
     # enable experimental wayland support
     wayland.enable = true;
-
+    theme = "where-is-my-sddm-theme";
   };
 }

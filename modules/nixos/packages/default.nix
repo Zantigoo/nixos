@@ -41,6 +41,7 @@
     nautilus
     nautilus-python
     papirus-icon-theme
+    where-is-my-sddm-theme
         
   ];
 

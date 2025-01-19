@@ -61,7 +61,7 @@
 
         #entry {
         background: #313244;
-        border: 1px solidrgba(249, 225, 175, 0.49);
+        border: 3px solid #fab387;
         border-radius: 16px;
         margin: 0.5rem;
         padding: 0.3rem 1rem;
@@ -83,7 +83,6 @@
 
         box#main {
         background: #181825;
-        border: solid 1px #fab387;
         border-radius: 16px;
         padding: 0.3rem;
         }

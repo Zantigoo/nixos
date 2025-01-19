@@ -52,7 +52,7 @@
         enable = true;
       };
       btop.enable = true;
-
+      yazi.enable = true;
     };
 
     iconTheme = {

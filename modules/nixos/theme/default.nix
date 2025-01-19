@@ -17,15 +17,15 @@
       base03 = "45475a"; # surface1
       base04 = "585b70"; # surface2
       base05 = "cdd6f4"; # text
-      base06 = "f5e0dc"; # rosewater
+      base06 = "f9e2af"; # rosewater
       base07 = "fab387"; # lavender
-      base08 = "fab387"; # red
+      base08 = "f9e2af"; # red
       base09 = "fab387"; # peach
-      base0A = "fab387"; # yellow
+      base0A = "f9e2af"; # yellow
       base0B = "fab387"; # green
-      base0C = "fab387"; # teal
+      base0C = "f9e2af"; # teal
       base0D = "fab387"; # blue
-      base0E = "fab387"; # mauve
+      base0E = "f9e2af"; # mauve
       base0F = "fab387"; # flamingo
     };
     targets = {

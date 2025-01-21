@@ -33,14 +33,6 @@ nix = {
     };
   };
 
-  boot = {
-    loader.grub.configurationLimit = 5;
-    supportedFilesystems = {
-      ntfs = true;
-    };
-  };
-
-
   nixpkgs.config = {
     allowUnfree = true;
     rocmSupport = true;

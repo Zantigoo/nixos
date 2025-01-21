@@ -52,6 +52,10 @@
   };
   programs.nm-applet.enable = true;
 
+  services.udev.packages = with pkgs; [
+    via
+  ];
+
 
   #programs.thunar = {
   #      enable = true;

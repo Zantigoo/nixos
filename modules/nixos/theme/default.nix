@@ -32,8 +32,7 @@
       console.enable = true;
       gnome.enable = true;
       grub = {
-        enable = true;
-        useImage = ./wall2.png;
+        enable = false;
       };
       gtk.enable = true;
       plymouth.enable = true;

@@ -25,7 +25,7 @@
       "$launcher" = "anyrun";   
       "$fileManager" = "nautilus";
       "$taskManager" = "btop";
-      "$powermenu" = "hyprpanel -t powerdropdownmenu";
+      "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
 
       exec-once = [
         "hyprpanel"

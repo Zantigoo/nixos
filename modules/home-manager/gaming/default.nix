@@ -13,5 +13,7 @@
     prismlauncher
     r2modman
     itch
+    heroic
+    lutris
   ];
 }

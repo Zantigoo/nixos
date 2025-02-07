@@ -8,6 +8,5 @@
 {
     programs.btop = {
         enable = true;
-        
     };
 }

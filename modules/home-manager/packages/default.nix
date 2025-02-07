@@ -29,7 +29,6 @@
     krita
     aseprite
     slack
-    lutris
 
     # terminal time
 

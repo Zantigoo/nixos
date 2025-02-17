@@ -28,6 +28,7 @@
     enable = true;
     allowedTCPPorts = [
       53317 #LocalSend
+      8000 #Gen Purpose
     ];
   };
 

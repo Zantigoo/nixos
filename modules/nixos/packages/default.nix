@@ -42,9 +42,6 @@
     nautilus-python
     papirus-icon-theme
     where-is-my-sddm-theme
-    rocmPackages.rocm-smi
-    rocmPackages.rocminfo
-        
   ];
 
   programs.gnome-disks.enable = true;

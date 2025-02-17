@@ -12,6 +12,12 @@
     autosuggestion.enable = true;
   };
 
+  #tmux
+  programs.tmux = {
+    enable = true;
+    
+  };
+
   # starship
   programs.starship = {
     # enable starship

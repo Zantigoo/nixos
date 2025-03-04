@@ -22,7 +22,7 @@
       "$terminal" = "kitty";
       "$editor" = "nvim";
       "$browser" = "firefox";
-      "$launcher" = "anyrun";   
+      "$launcher" = "walker";   
       "$fileManager" = "nautilus";
       "$taskManager" = "btop";
       "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
@@ -31,7 +31,7 @@
         "hyprpanel"
         "blueman-applet"
         "clipse -listen"
-        #"walker --gapplication-service"
+        "walker --gapplication-service"
       ];
 
       env = [

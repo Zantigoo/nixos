@@ -32,12 +32,10 @@
       console.enable = true;
       gnome.enable = true;
       grub = {
-        enable = false;
+        enable = true;
       };
       gtk.enable = true;
       plymouth.enable = true;
-      
-
 
     };
   };

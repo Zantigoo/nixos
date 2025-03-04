@@ -15,7 +15,7 @@
     #./waybar
     #./wlogout
     ./kitty
-    #./walker
+    ./walker
   ];
 
 }

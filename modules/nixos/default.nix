@@ -20,6 +20,11 @@
 #      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
 #  };
 
+system = {
+     autoUpgrade.enable = true;
+     autoUpgrade.dates = "weekly";
+};
+
 nix = {
     settings = {
       experimental-features = ["nix-command" "flakes"];
@@ -28,7 +33,7 @@ nix = {
 
     gc = {
       automatic = true;
-      dates = "weekly";
+      dates = "daily";
       options = "--delete-older-than 10d";
     };
   };

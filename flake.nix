@@ -12,11 +12,9 @@
     hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     walker.url = "github:abenz1267/walker";
     stylix.url = "github:danth/stylix";
-    obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
-    nvf = {
-      url = "github:notashelf/nvf";
+    nixvim = {
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.obsidian-nvim.follows = "obsidian-nvim"; # <- this will use the obsidian-nvim from your inputs
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -41,7 +39,6 @@
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
-        inputs.nvf.nixosModules.default 
       ];
     };
   };

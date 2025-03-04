@@ -53,6 +53,7 @@
       };
       btop.enable = true;
       yazi.enable = true;
+      nixvim.enable = true;
     };
 
     iconTheme = {

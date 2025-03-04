@@ -6,6 +6,7 @@
     ./fzf.nix
     ./helix.nix
     ./yazi.nix
+    ./neovim.nix
   ];
 
   home.packages = with pkgs; [
@@ -30,8 +31,9 @@
     aseprite
     slack
 
+    
     # terminal time
-
+    mpv
 
     # screen capturing
     grim

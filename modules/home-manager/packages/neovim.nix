@@ -1,6 +1,5 @@
 {
 inputs, 
-pkgs,
 ...
 }: {
     /*imports = [ inputs.nvf.homeManagerModules.default ];
@@ -23,6 +22,18 @@ pkgs,
         plugins = {
             lualine.enable = true;
             auto-save.enable = true;
+	    lsp = {
+		enable = true;
+		servers = {
+		   jsonls.enable = true;
+		   html.enable = true;
+		   nixd.enable = true;
+		   cssls.enable = true;
+		   ts_ls.enable = true;
+		   volar.enable = true;
+		   golangci_lint_ls.enable = true;
+		};
+	    };
         };
     };
 }

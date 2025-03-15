@@ -54,6 +54,7 @@
       btop.enable = true;
       yazi.enable = true;
       nixvim.enable = true;
+      micro.enable = true;
     };
 
     iconTheme = {

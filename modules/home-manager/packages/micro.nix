@@ -8,7 +8,6 @@
 {
     programs.micro = {
         enable = true;
-        
 
     };
 }

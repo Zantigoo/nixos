@@ -30,7 +30,7 @@
     krita
     aseprite
     slack
-
+    
     
     # terminal time
     mpv

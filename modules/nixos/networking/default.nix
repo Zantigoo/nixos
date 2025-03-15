@@ -29,6 +29,7 @@
     allowedTCPPorts = [
       53317 #LocalSend
       8000 #Gen Purpose
+      25565 #Minecraft Server
     ];
   };
 

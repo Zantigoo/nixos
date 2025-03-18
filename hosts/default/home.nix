@@ -12,7 +12,7 @@
 
   # env vars
   home.sessionVariables = {
-    EDITOR = "code";
+    EDITOR = "nvim";
 
     NIXOS_OZONE_WL = "1";
   };

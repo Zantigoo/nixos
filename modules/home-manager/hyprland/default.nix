@@ -21,9 +21,9 @@
       "$shiftMod" = "SUPER SHIFT";
       "$terminal" = "kitty";
       "$editor" = "nvim";
-      "$browser" = "firefox";
-      "$launcher" = "walker";   
-      "$fileManager" = "nautilus";
+      "$browser" = "floorp";
+      "$launcher" = "anyrun";   
+      "$fileManager" = "yazi";
       "$taskManager" = "btop";
       "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
 
@@ -31,7 +31,7 @@
         "hyprpanel"
         "blueman-applet"
         "clipse -listen"
-        "walker --gapplication-service"
+        
       ];
 
       env = [

@@ -19,6 +19,7 @@
     # desktop apps
     bitwarden
     firefox
+    floorp
     vesktop
     obs-studio
     obsidian
@@ -30,7 +31,7 @@
     krita
     aseprite
     slack
-    
+    deluge
     
     # terminal time
     mpv

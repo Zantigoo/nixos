@@ -10,7 +10,7 @@
       enable = true;
       enableZshIntegration = true;
 
-      settings = {
+       settings = {
 	manager = {
 	  show_hidden = true;
 	};

@@ -24,6 +24,8 @@
     hyprpanel
     pulseaudio
     blueman
+    ffmpeg
+    ripgrep
 
     #dependants
     zenity

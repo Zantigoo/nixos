@@ -55,6 +55,7 @@
       yazi.enable = true;
       nixvim.enable = true;
       micro.enable = true;
+      ghostty.enable = true;
     };
 
     iconTheme = {

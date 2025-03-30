@@ -7,6 +7,7 @@
     ./helix.nix
     ./yazi.nix
     ./neovim.nix
+    ./ghostty.nix
   ];
 
   home.packages = with pkgs; [
@@ -32,7 +33,8 @@
     aseprite
     slack
     deluge
-    
+    gnome-boxes    
+
     # terminal time
     mpv
 

@@ -14,6 +14,7 @@
     ./ssh
     ./gaming
     ./theme
+    ./virtualization
   ];
 
 #  xdg.mime.defaultApplications = {

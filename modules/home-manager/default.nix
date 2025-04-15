@@ -14,7 +14,6 @@
     ./gaming
     #./waybar
     #./wlogout
-    ./kitty
     ./walker
   ];
 

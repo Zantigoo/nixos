@@ -18,7 +18,7 @@
   };
 
   home.stateVersion = "23.11";
-  home.enableNixpkgsReleaseCheck = false;
+  home.enableNixpkgsReleaseCheck = true;
   
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

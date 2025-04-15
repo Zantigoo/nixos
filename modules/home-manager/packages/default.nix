@@ -8,6 +8,7 @@
     ./yazi.nix
     ./neovim.nix
     ./ghostty.nix
+    ./kitty.nix
   ];
 
   home.packages = with pkgs; [
@@ -19,7 +20,6 @@
 
     # desktop apps
     bitwarden
-    firefox
     floorp
     vesktop
     obs-studio
@@ -30,11 +30,11 @@
     eog
     gnome-text-editor
     krita
-    aseprite
     slack
     deluge
     gnome-boxes    
-
+    pinta
+    limo
     # terminal time
     mpv
 
@@ -44,11 +44,12 @@
     imagemagick
     swappy
     gpu-screen-recorder
+    gpu-screen-recorder-gtk
+
 
     #hypr utils
 
     hyprshot
-    hyprlock
     
     #clipboard
 

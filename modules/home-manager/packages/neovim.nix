@@ -19,21 +19,35 @@ inputs,
     imports = [ inputs.nixvim.homeManagerModules.nixvim ];
     programs.nixvim = {
         enable = true;
-        plugins = {
+          opts = {
+            tabstop = 2;
+						softtabstop = 2;
+						showtabline = 2;
+						smartindent = true;
+						cursorline = true;
+						breakindent = true;
+						cmdheight = 0;
+						splitright = true;
+						mouse = "a";
+						number = true;
+						clipboard = "unnamedplus";
+						showmode = false;
+				    };
+          plugins = {
             lualine.enable = true;
             auto-save.enable = true;
-	    lsp = {
-		enable = true;
-		servers = {
-		   jsonls.enable = true;
-		   html.enable = true;
-		   nixd.enable = true;
-		   cssls.enable = true;
-		   ts_ls.enable = true;
-		   volar.enable = true;
-		   golangci_lint_ls.enable = true;
-		};
-	    };
-        };
+						lsp = {
+				      enable = true;
+							servers = {
+								jsonls.enable = true;
+								html.enable = true;
+								nixd.enable = true;
+								cssls.enable = true;
+								ts_ls.enable = true;
+								volar.enable = true;
+								golangci_lint_ls.enable = true;
+								};
+				    };
+				  };
     };
 }

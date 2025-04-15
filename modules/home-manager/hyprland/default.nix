@@ -31,7 +31,7 @@
         "hyprpanel"
         "blueman-applet"
         "clipse -listen"
-        
+        "[workspace special silent] vesktop"
       ];
 
       env = [

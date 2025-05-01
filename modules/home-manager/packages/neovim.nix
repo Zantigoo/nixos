@@ -20,9 +20,11 @@ inputs,
     programs.nixvim = {
         enable = true;
           opts = {
+						# Tab settings			
             tabstop = 2;
-						softtabstop = 2;
-						showtabline = 2;
+            shiftwidth = 2;
+						expandtab = true;
+
 						smartindent = true;
 						cursorline = true;
 						breakindent = true;

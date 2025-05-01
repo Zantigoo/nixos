@@ -44,7 +44,6 @@
     imagemagick
     swappy
     gpu-screen-recorder
-    gpu-screen-recorder-gtk
 
 
     #hypr utils

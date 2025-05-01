@@ -33,8 +33,9 @@
     slack
     deluge
     gnome-boxes    
-    pinta
     limo
+    ruffle
+    
     # terminal time
     mpv
 
@@ -44,7 +45,6 @@
     imagemagick
     swappy
     gpu-screen-recorder
-
 
     #hypr utils
 

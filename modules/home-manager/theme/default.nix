@@ -50,15 +50,14 @@
       gnome.enable = true;
       hyprland.enable = false;
       kde.enable = true;
-      kitty = {
-        enable = true;
-      };
+      kitty.enable = true;
       btop.enable = true;
       yazi.enable = true;
       nixvim.enable = true;
       micro.enable = true;
       ghostty.enable = true;
       vesktop.enable = true;
+      zellij.enable = true;
     };
 
     iconTheme = {

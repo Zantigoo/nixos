@@ -7,7 +7,6 @@
     inputs.home-manager.nixosModules.default
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ../../modules/nixos/default.nix
     ../../modules/nixos/packages/syncthing.nix
   ];
 

@@ -1,7 +1,5 @@
 {
-  pkgs,
   inputs,
-  config,
   ...
 }: { 
     imports = [
@@ -22,6 +20,7 @@
             websearch.prefix = "?";
             switcher.prefix = "/";
         };
+        
     };
 
 }

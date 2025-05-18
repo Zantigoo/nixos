@@ -1,7 +1,7 @@
 {...} : {
 
     programs.ghostty = {
-      enable = true;
+      enable = false; 
       enableZshIntegration = true;
     };
 

@@ -38,6 +38,7 @@ inputs,
           plugins = {
             lualine.enable = true;
             auto-save.enable = true;
+
 						lsp = {
 				      enable = true;
 							servers = {

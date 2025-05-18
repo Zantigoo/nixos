@@ -34,7 +34,6 @@
     deluge
     gnome-boxes    
     limo
-    ruffle
     
     # terminal time
     mpv
@@ -47,7 +46,7 @@
     gpu-screen-recorder
 
     #hypr utils
-
+    hyprpicker
     hyprshot
     
     #clipboard

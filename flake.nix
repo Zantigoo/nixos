@@ -33,13 +33,22 @@
       ];
     };
   in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit system inputs pkgs;};
-      modules = [
-        ./hosts/default/configuration.nix
-        inputs.home-manager.nixosModules.default
-        inputs.stylix.nixosModules.stylix
-      ];
+    nixosConfigurations = {
+      library = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit system inputs pkgs;};
+        modules = [
+            ./hosts/desktop/configuration.nix
+            inputs.home-manager.nixosModules.default
+            inputs.stylix.nixosModules.stylix
+        ];
+      };
+      relic = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit system inputs pkgs;};
+        modules = [
+            ./hosts/server/configuration.nix
+            inputs.home-manager.nixosModules.default
+        ];
+      };
     };
   };
 }

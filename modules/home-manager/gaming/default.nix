@@ -15,6 +15,5 @@
     itch
     heroic
     lutris
-    minecraft-server
   ];
 }

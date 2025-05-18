@@ -7,7 +7,7 @@
 
 {
     programs.helix = {
-        enable = true;
+        enable = false;
         defaultEditor = false;
         
     };

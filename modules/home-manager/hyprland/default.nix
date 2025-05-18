@@ -1,13 +1,10 @@
 {
-  inputs,
-  pkgs,
   config,
   ...
 }: {
   imports = [
     ./hyprlock.nix
     ./hyprpaper.nix
-    ./hyprpicker.nix
   ];
 
   
@@ -18,20 +15,22 @@
     settings = {
       # default variables
       "$mainMod" = "SUPER";
-      "$shiftMod" = "SUPER SHIFT";
+      "$shiftMod" = "SUPER_SHIFT";
       "$terminal" = "kitty";
       "$editor" = "nvim";
       "$browser" = "floorp";
-      "$launcher" = "anyrun";   
-      "$fileManager" = "yazi";
+      "$launcher" = "walker";   
+      "$fileManager" = "$terminal -e yazi";
       "$taskManager" = "btop";
       "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
+      "$app1" = "$browser";
+      "$app2" = "$fileManager";
+      "$app3" = "obsidian";
 
       exec-once = [
         "hyprpanel"
         "blueman-applet"
         "clipse -listen"
-        "[workspace special silent] vesktop"
       ];
 
       env = [
@@ -60,16 +59,24 @@
       windowrulev2 = [
         # firefox
         "float, title:^(Picture-in-Picture)$"
-
-
+        "bordercolor 0xfffab387, class:(floorp)"
+        "bordercolor 0xfffab387, class:(firefox)"
+        # Zellij
+        "bordercolor 0xffa6e3a1, class:^(kitty)$"
 
         # steam
         "float, class:(steam), title:(Friends List)"
         "nofocus, class:^(steam)$, title:^()$"
+        "bordercolor 0xff89b4fa, class:^(steam)$"
 
         #clipse
         "float, class:(clipse)"
         "size 622 652,class:(clipse)"
+
+        #obsidian
+        "bordercolor 0xffcba6f7, class:(obsidian)"
+        #discord
+        "bordercolor 0xfff9e2af, class:(vesktop)"
       ];
 
       monitor = [
@@ -99,13 +106,13 @@
 
       general = {
         gaps_in = "5";
-        gaps_out = "15";
+        gaps_out = "10";
 
         border_size = "5";
         "col.inactive_border" = "0x44cdd6f4";
-        "col.active_border" = "0xfffab387";
+        "col.active_border" = "0xffb4befe";
 
-        layout = "dwindle";
+        layout = "master";
       };
 
       decoration = {
@@ -128,18 +135,18 @@
         
         # apps
         "$mainMod, return, exec, $terminal"
-        "$mainMod, q, exec, $browser"
         "$mainMod, space, exec, $launcher"
-        "$mainMod, e, exec, $fileManager"
-        ##"$mainMod, Num_lock, exec, $calculator"
-        
-        "$mainMod, F, fullscreen, 0"
+        "$mainMod, 7, exec, $app1"
+        "$mainMod, 8, exec, $app2"
+        "$mainMod, 9, exec, $app3"
+        "$mainMod, 0, exec, $app4"
 
-
-        # toggle floating window
+        # format windows
         "$mainMod, v, togglefloating"
-
+        "$mainMod, f, fullscreen, 0"
+        
         # close active window
+        "$mainMod, q, killactive"
         "$mainMod, c, killactive"
 
         # control scratch pad
@@ -156,7 +163,12 @@
         "$mainMod, up, movefocus, u"
         "$mainMod, down, movefocus, d"
 
-        # switch workspaces
+        "$mainMod, h, movefocus, l"
+        "$mainMod, l, movefocus, r"
+        "$mainMod, k, movefocus, u"
+        "$mainMod, j, movefocus, d"
+
+       # switch workspaces
         #"$mainMod, 1, workspace, 1"
         #"$mainMod, 2, workspace, 2"
         #"$mainMod, 3, workspace, 3"
@@ -184,6 +196,9 @@
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
 
+        "$mainMod, PAGE_UP, workspace, r-1"
+        "$mainMod, PAGE_DOWN, workspace, r+1"
+
         "$mainMod, 1, workspace, r-1"
         "$mainMod, 2, workspace, r+1"
 
@@ -192,19 +207,6 @@
 
         "$mainMod, TAB, workspace, m+1"
         "$mainMod SHIFT, TAB, movetoworkspace, m+1"
-        #"ALT, TAB, swapactiveworkspaces DP-1 DP-2"
-        
-
-
-
-        #Hyprnome Switching
-        /*
-        "SUPER, 1, exec, hyprnome --previous"
-        "SUPER, 2, exec, hyprnome"
-        "SUPER_SHIFT, 1, exec, hyprnome --previous --move"
-        "SUPER_SHIFT, 2, exec, hyprnome --move"
-        "SUPER, TAB, exec, hyprnome --cycle"
-        */
         
 
         # screenshotting

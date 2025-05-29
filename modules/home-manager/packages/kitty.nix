@@ -1,6 +1,6 @@
-{config, ...}: {
+{...}: {
   programs.kitty = {
-    enable = true;
+    enable = false;
     extraConfig = "
     confirm_os_window_close 0
     ";

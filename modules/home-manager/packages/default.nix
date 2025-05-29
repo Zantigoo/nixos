@@ -9,6 +9,7 @@
     ./neovim.nix
     ./ghostty.nix
     ./kitty.nix
+    ./wezterm.nix
   ];
 
   home.packages = with pkgs; [
@@ -28,13 +29,11 @@
     chromium
     localsend
     eog
-    gnome-text-editor
     krita
     slack
     deluge
-    gnome-boxes    
-    limo
-    
+    duckstation
+
     # terminal time
     mpv
 

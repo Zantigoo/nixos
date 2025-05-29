@@ -16,7 +16,7 @@
       # default variables
       "$mainMod" = "SUPER";
       "$shiftMod" = "SUPER_SHIFT";
-      "$terminal" = "kitty";
+      "$terminal" = "wezterm";
       "$editor" = "nvim";
       "$browser" = "floorp";
       "$launcher" = "walker";   
@@ -63,6 +63,7 @@
         "bordercolor 0xfffab387, class:(firefox)"
         # Zellij
         "bordercolor 0xffa6e3a1, class:^(kitty)$"
+        "bordercolor 0xffa6e3a1, class:^(org.wezfurlong.wezterm)$"
 
         # steam
         "float, class:(steam), title:(Friends List)"
@@ -112,7 +113,7 @@
         "col.inactive_border" = "0x44cdd6f4";
         "col.active_border" = "0xffb4befe";
 
-        layout = "master";
+        layout = "dwindle";
       };
 
       decoration = {

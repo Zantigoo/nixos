@@ -43,7 +43,7 @@
     nautilus
     nautilus-python
     papirus-icon-theme
-    where-is-my-sddm-theme
+    catppuccin-sddm-corners
   ];
 
   programs.gnome-disks.enable = true;

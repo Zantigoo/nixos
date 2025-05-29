@@ -1,7 +1,5 @@
 {
   pkgs,
-  inputs,
-  config,
   ...
 }: {
 
@@ -58,6 +56,7 @@
       ghostty.enable = true;
       vesktop.enable = true;
       zellij.enable = true;
+      wezterm.enable = true;
     };
 
     iconTheme = {

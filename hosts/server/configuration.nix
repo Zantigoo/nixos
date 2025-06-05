@@ -7,7 +7,7 @@
     inputs.home-manager.nixosModules.default
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ../../modules/nixos/packages/syncthing.nix
+    ../../modules/server/couchdb/default.nix
   ];
 
  # Bootloader.
@@ -68,7 +68,12 @@
     neovim
     git
     yazi
+    lazygit
   ];
+
+  virtualisation.docker = {
+    enable = true;  
+  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

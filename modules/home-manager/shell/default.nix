@@ -11,6 +11,7 @@
     nixos-rebuild-flake = "sudo nixos-rebuild switch --flake";
     nixos-update-flake = "nix flake update";
     discord = "vesktop";
-    recscrn = "bash ~/bin/start-recording.sh";
+    recgpu = "bash ~/bin/start-stop-recording.sh";
+    clipgpu = "bash ~/bin/save-replay.sh";
   };
 }

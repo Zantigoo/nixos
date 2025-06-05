@@ -57,6 +57,7 @@
       vesktop.enable = true;
       zellij.enable = true;
       wezterm.enable = true;
+      rofi.enable = true;
     };
 
     iconTheme = {

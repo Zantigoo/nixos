@@ -10,7 +10,7 @@
     ./git
     ./keyring
     #./foot
-    #./rofi
+    ./rofi
     ./gaming
     #./waybar
     #./wlogout

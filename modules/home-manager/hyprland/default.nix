@@ -19,7 +19,7 @@
       "$terminal" = "wezterm";
       "$editor" = "nvim";
       "$browser" = "floorp";
-      "$launcher" = "walker";   
+      "$launcher" = "rofi -show drun";   
       "$fileManager" = "$terminal -e yazi";
       "$taskManager" = "btop";
       "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
@@ -71,8 +71,8 @@
         "bordercolor 0xff89b4fa, class:^(steam)$"
 
         #clipse
-        "float, class:(clipse)"
-        "size 622 652,class:(clipse)"
+        "float, tag:clipse"
+        "size 622 652, tag:(clipse)"
 
         #obsidian
         "bordercolor 0xffcba6f7, class:(obsidian)"
@@ -221,7 +221,7 @@
         # pin window
         "$mainMod, s, pin"
         #open clipboard
-        "SUPER CTRL, v, exec, $terminal --class clipse -e 'clipse'"
+        "$mainMod CTRL, v, exec, [tag +clipse] $terminal -e clipse"
    
       ];
 

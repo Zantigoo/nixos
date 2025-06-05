@@ -46,7 +46,6 @@
         specialArgs = {inherit system inputs pkgs;};
         modules = [
             ./hosts/server/configuration.nix
-            inputs.home-manager.nixosModules.default
         ];
       };
     };

@@ -32,7 +32,6 @@
     krita
     slack
     deluge
-    duckstation
 
     # terminal time
     mpv
@@ -49,13 +48,11 @@
     hyprshot
     
     #clipboard
-
     clipse
     wl-clipboard
     
     # development tools
     vscode
-
 
     # compilers and runtimes
     nodejs

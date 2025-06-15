@@ -35,9 +35,18 @@ inputs,
 						clipboard = "unnamedplus";
 						showmode = false;
 				    };
+
+            
           plugins = {
             lualine.enable = true;
             auto-save.enable = true;
+            treesitter = {
+              enable = true;
+              folding = true;
+              };
+            telescope = {
+              enable = true;
+              };
 
 						lsp = {
 				      enable = true;

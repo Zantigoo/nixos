@@ -6,7 +6,6 @@
     ./fzf.nix
     ./helix.nix
     ./yazi.nix
-    ./neovim.nix
     ./ghostty.nix
     ./kitty.nix
     ./wezterm.nix
@@ -51,9 +50,6 @@
     clipse
     wl-clipboard
     
-    # development tools
-    vscode
-
     # compilers and runtimes
     nodejs
     bun

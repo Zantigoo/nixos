@@ -1,7 +1,7 @@
 {...}: {
   imports = [
     ../default.nix
-    ./anyrun
+    #./anyrun
     ./options
     ./hyprland
     ./theme
@@ -14,7 +14,8 @@
     ./gaming
     #./waybar
     #./wlogout
-    ./walker
+    #./walker
+    ./helix
     ./neovim
   ];
 

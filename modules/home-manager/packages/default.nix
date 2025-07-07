@@ -19,8 +19,8 @@
     p7zip
 
     # desktop apps
+    firefox
     bitwarden
-    floorp
     vesktop
     obs-studio
     obsidian

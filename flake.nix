@@ -7,10 +7,8 @@
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprpaper.url = "github:hyprwm/hyprpaper";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-    anyrun.url = "github:anyrun-org/anyrun";
     nix-gaming.url = "github:fufexan/nix-gaming";
     hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
-    walker.url = "github:abenz1267/walker";
     stylix.url = "github:danth/stylix";
     nixvim = {
       url = "github:nix-community/nixvim";

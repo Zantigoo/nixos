@@ -15,7 +15,6 @@
     #./waybar
     #./wlogout
     #./walker
-    ./helix
     ./neovim
   ];
 

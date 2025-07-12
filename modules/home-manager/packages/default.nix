@@ -19,7 +19,6 @@
     p7zip
 
     # desktop apps
-    firefox
     bitwarden
     vesktop
     obs-studio
@@ -54,7 +53,7 @@
     nodejs
     bun
     go
-
+    
   ];
 
 }

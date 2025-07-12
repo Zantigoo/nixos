@@ -3,6 +3,7 @@
     ./fonts.nix
     ./syncthing.nix
     ./ollama.nix
+    ./firefox.nix
   ];
 
   # system packages
@@ -26,7 +27,7 @@
     blueman
     ffmpeg
     ripgrep
-
+    
     #dependants
     zenity
     evince
@@ -44,6 +45,7 @@
     nautilus-python
     papirus-icon-theme
     catppuccin-sddm-corners
+    firefoxpwa
   ];
 
   programs.gnome-disks.enable = true;

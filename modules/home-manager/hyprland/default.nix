@@ -18,9 +18,9 @@
       "$shiftMod" = "SUPER_SHIFT";
       "$terminal" = "wezterm";
       "$editor" = "nvim";
-      "$browser" = "floorp";
+      "$browser" = "firefox";
       "$launcher" = "rofi -show drun";   
-      "$fileManager" = "$terminal -e yazi";
+      "$fileManager" = "nautilus";
       "$taskManager" = "btop";
       "$powermenu" = "hyprpanel toggleWindow powerdropdownmenu";
       "$app1" = "$browser";

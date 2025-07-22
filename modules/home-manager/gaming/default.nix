@@ -10,7 +10,6 @@
     winetricks
     cockatrice
     protontricks
-    prismlauncher
     lutris
   ];
 }

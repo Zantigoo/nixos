@@ -8,7 +8,6 @@
     hyprpaper.url = "github:hyprwm/hyprpaper";
     hyprpicker.url = "github:hyprwm/hyprpicker";
     nix-gaming.url = "github:fufexan/nix-gaming";
-    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     stylix.url = "github:danth/stylix";
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -26,9 +25,6 @@
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
-      overlays = [
-        inputs.hyprpanel.overlay
-      ];
     };
   in {
     nixosConfigurations = {

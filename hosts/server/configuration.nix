@@ -7,7 +7,6 @@
     inputs.home-manager.nixosModules.default
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ../../modules/server/couchdb/default.nix
   ];
 
  # Bootloader.

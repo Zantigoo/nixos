@@ -16,6 +16,8 @@
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "relic"; # Define your hostname.
+  
+  security.sudo.wheelNeedsPassword = false;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -53,7 +55,7 @@
     isNormalUser = true;
     description = "zantigo";
     extraGroups = [ "networkmanager" "wheel" ];
-  };
+ };
 
   # Enable automatic login for the user.
   services.getty.autologinUser = "zantigo";
@@ -88,7 +90,13 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    settings.PasswordAuthentication = false;
+    settings.KbdInteractiveAuthentication = false;
+    };
+
+  
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

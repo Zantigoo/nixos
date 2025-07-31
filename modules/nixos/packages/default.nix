@@ -44,8 +44,8 @@
     nautilus
     nautilus-python
     papirus-icon-theme
-    catppuccin-sddm-corners
     firefoxpwa
+    greetd.tuigreet
   ];
 
   programs.gnome-disks.enable = true;

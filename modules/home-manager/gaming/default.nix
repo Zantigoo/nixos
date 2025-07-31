@@ -11,5 +11,6 @@
     cockatrice
     protontricks
     lutris
+    prismlauncher
   ];
 }

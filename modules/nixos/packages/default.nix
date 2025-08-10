@@ -51,7 +51,6 @@
   programs.gnome-disks.enable = true;
   programs.nautilus-open-any-terminal = {
     enable = true;
-    terminal = "kitty"; 
   };
   programs.nm-applet.enable = true;
 

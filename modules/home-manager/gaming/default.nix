@@ -12,5 +12,6 @@
     protontricks
     lutris
     prismlauncher
+    bottles
   ];
 }

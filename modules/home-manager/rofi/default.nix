@@ -8,6 +8,11 @@
     modes = [
       "drun"
     ];
+    plugins = [
+      pkgs.rofi-calc
+    ];
     cycle = true;
+    location = "center";
+
   };
 }

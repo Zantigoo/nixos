@@ -21,10 +21,10 @@
 #      "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
 #  };
 
-system = {
-     autoUpgrade.enable = true;
-     autoUpgrade.dates = "weekly";
-};
+#system = {
+#     autoUpgrade.enable = true;
+#     autoUpgrade.dates = "weekly";
+#};
 
 nix = {
     settings = {
@@ -81,7 +81,6 @@ nix = {
     binfmt = true;
   };
   
-  hardware.ckb-next.enable = false;
   virtualisation.waydroid.enable = true;
 
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";

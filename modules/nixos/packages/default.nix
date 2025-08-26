@@ -45,7 +45,7 @@
     nautilus-python
     papirus-icon-theme
     firefoxpwa
-    greetd.tuigreet
+    tuigreet
   ];
 
   programs.gnome-disks.enable = true;

@@ -33,6 +33,7 @@
 
     # terminal time
     mpv
+    basalt
 
     # screen capturing
     grim

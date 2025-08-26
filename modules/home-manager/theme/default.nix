@@ -33,6 +33,7 @@
       monospace = {
         name = "Fira Code";
         package = pkgs.fira-code;
+
       };
       
     };   

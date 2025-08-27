@@ -48,7 +48,6 @@
       gtk.enable = true;
       gnome.enable = true;
       hyprland.enable = false;
-      kde.enable = true;
       kitty.enable = true;
       btop.enable = true;
       yazi.enable = true;
@@ -59,6 +58,7 @@
       zellij.enable = true;
       wezterm.enable = true;
       rofi.enable = true;
+      mpv.enable =true;
     };
 
     iconTheme = {

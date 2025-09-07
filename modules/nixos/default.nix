@@ -4,7 +4,7 @@
     ./sound
     ./locale
     ./displayManager
-    ./hyprland
+    ./windowManger
     ./bootloader
     ./packages
     ./polkit

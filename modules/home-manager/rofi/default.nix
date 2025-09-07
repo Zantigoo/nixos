@@ -40,24 +40,39 @@
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
             in {
-      element = {
-        text-style = mkLiteral "bold";
-        padding = mkLiteral "0px 10px";
-      };
-      element-icon = {
-        size = mkLiteral "1.5em";
-      };
-      element-text = {
-        vertical-align = mkLiteral "0.5";
-        horizontal-align = mkLiteral "0.5";
+      inputbar = {
+        spacing = mkLiteral "8px";
+        padding = mkLiteral "8px";
       };
       window = {
-        height = mkLiteral "300px";
-        width = mkLiteral "500px";
+        location = mkLiteral "center";
+        width = mkLiteral "480";
+        border-radius = mkLiteral "5px";
         border = mkLiteral "2px";
-        border-radius = mkLiteral "12px";
-        font-size = mkLiteral "16px";
-        font-style = mkLiteral "bold";
+      };
+      prompt = {
+        vertical-align = mkLiteral "0.5";
+      };
+      textbox = {
+        padding = mkLiteral "8px";
+      };
+      listview = {
+        padding =  mkLiteral "4px 0";
+        lines = mkLiteral "8";
+        columns =   mkLiteral "1";
+        fixed-height =  mkLiteral "false";
+      };
+      element = {
+        padding =  mkLiteral "8px";
+        spacing =  mkLiteral "8px";
+      };
+      element-icon = {
+        size = mkLiteral "1.8em";
+        vertical-align = mkLiteral "0.5";
+      };
+      element-text = {
+        text-color = mkLiteral "inherit";
+        vertical-align = mkLiteral "0.5";
       };
     };
   };

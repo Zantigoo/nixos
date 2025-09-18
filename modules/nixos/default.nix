@@ -4,7 +4,7 @@
     ./sound
     ./locale
     ./displayManager
-    ./windowManger
+    ./windowManager
     ./bootloader
     ./packages
     ./polkit

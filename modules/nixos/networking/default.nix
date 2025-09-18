@@ -1,10 +1,8 @@
 { ... }:
 
 {
-
   # enable usb modeswitch (for android usb tethering)
   hardware.usb-modeswitch.enable = true;
-  
   # for Flipper over USB
   hardware.flipperzero.enable = true;
   

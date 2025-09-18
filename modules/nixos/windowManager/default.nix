@@ -5,7 +5,10 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+  };
 
+  programs.niri = {
+    enable = true;
   };
 
   xdg.portal = {
@@ -19,6 +22,7 @@
 
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal-gtk
+    #xwayland-satellite
   ];
 
 }

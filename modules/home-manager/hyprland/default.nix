@@ -1,5 +1,7 @@
 {
   config,
+  pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -11,7 +13,9 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}.hyprscrolling
+    ];
     settings = {
       # default variables
       "$mainMod" = "SUPER";
@@ -113,7 +117,7 @@
         "col.inactive_border" = "0x44cdd6f4";
         "col.active_border" = "0xffb4befe";
 
-        layout = "dwindle";
+        layout = "scrolling";
       };
 
       decoration = {

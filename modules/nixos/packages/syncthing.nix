@@ -2,7 +2,7 @@
 
 {
  services.syncthing = {
-    enable = true;
+    enable = false;
     openDefaultPorts = true;
     user = "zantigo";
     group = "users";

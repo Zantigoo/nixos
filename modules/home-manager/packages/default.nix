@@ -30,10 +30,10 @@
     krita
     slack
     deluge
+    onlyoffice-desktopeditors
 
     # terminal time
     mpv
-    basalt
 
     # screen capturing
     grim

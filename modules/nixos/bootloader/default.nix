@@ -15,6 +15,7 @@
       };
       systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
+      efi.efiSysMountPoint = "/boot";
     };
     supportedFilesystems = {
       ntfs = true;

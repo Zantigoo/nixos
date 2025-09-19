@@ -46,6 +46,7 @@
     papirus-icon-theme
     firefoxpwa
     tuigreet
+    
   ];
 
   programs.gnome-disks.enable = true;

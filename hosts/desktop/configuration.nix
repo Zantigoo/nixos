@@ -15,7 +15,9 @@
 
   # enable the zsh shell
   programs.zsh.enable = true;
-
+  
+  systemd.enableEmergencyMode = false;
+  
   # set default user shell
   users.defaultUserShell = pkgs.zsh;
 

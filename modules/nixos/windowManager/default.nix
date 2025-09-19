@@ -7,10 +7,6 @@
     xwayland.enable = true;
   };
 
-  programs.niri = {
-    enable = true;
-  };
-
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
@@ -22,7 +18,6 @@
 
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal-gtk
-    #xwayland-satellite
   ];
 
 }

@@ -3,14 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprpaper.url = "github:hyprwm/hyprpaper";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
     nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
     nixvim = {

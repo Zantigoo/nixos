@@ -9,13 +9,13 @@
     ./packages
     ./git
     ./keyring
-    #./foot
     ./rofi
     ./gaming
     #./waybar
     #./wlogout
     #./walker
     ./neovim
+    ./helix
   ];
 
 }

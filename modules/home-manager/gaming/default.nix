@@ -4,14 +4,18 @@
   ];
 
   home.packages = with pkgs; [
-    # gaming
+    
+    # utilities
     wineWowPackages.waylandFull
     wine-wayland
     winetricks
-    cockatrice
     protontricks
+
+    # launchers
+    cockatrice
     lutris
+    vintagestory
     prismlauncher
-    bottles
+
   ];
 }

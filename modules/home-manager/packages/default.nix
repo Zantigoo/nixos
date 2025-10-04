@@ -24,13 +24,13 @@
     obs-studio
     obsidian
     blockbench
-    chromium
     localsend
     eog
     krita
     slack
     deluge
     onlyoffice-desktopeditors
+    jocalsend
 
     # terminal time
     mpv

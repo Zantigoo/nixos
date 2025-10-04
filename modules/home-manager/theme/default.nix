@@ -58,7 +58,8 @@
       zellij.enable = true;
       wezterm.enable = true;
       rofi.enable = true;
-      mpv.enable =true;
+      mpv.enable = true;
+      helix.enable = true;
     };
 
     iconTheme = {

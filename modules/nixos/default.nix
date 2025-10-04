@@ -15,6 +15,7 @@
     ./gaming
     ./theme
     ./virtualization
+    ./printing
   ];
 
 #  xdg.mime.defaultApplications = {

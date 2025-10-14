@@ -27,6 +27,7 @@
     blueman
     ffmpeg
     ripgrep
+    zoxide    
     
     #dependants
     zenity

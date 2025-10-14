@@ -31,7 +31,7 @@
 								nixd.enable = true;
 								cssls.enable = true;
 								ts_ls.enable = true;
-								volar.enable = true;
+								vue_ls.enable = true;
 								golangci_lint_ls.enable = true;
 								};
 				      };

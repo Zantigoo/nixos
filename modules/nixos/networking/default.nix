@@ -15,6 +15,7 @@
     enable = true;
     settings = {
       General = {
+        Experimental = true;
         MultiProfile = "multiple";
         Disable = "Headset";
       };

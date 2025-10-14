@@ -3,7 +3,7 @@
   ...
 }:{
   hardware.ckb-next = {
-    enable = true;
+    enable = false;
   };
   services.ratbagd.enable = false;
   environment.systemPackages = with pkgs; [

@@ -18,25 +18,24 @@
     };
   };
 
-  outputs = {self, nixpkgs, ...} @ inputs:  
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  } @ inputs:  
   let
+    inherit (self) outputs;
     system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-      config.allowUnfree = true;
-    };
   in {
     nixosConfigurations = {
       library = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit system inputs pkgs;};
+        specialArgs = {inherit inputs outputs;};
         modules = [
-            ./hosts/desktop/configuration.nix
-            inputs.home-manager.nixosModules.default
-            inputs.stylix.nixosModules.stylix
+          ./hosts/desktop/configuration.nix
         ];
       };
       relic = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit system inputs pkgs;};
+        specialArgs = {inherit inputs outputs;};
         modules = [
             ./hosts/server/configuration.nix
         ];

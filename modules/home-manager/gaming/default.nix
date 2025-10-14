@@ -10,6 +10,7 @@
     wine-wayland
     winetricks
     protontricks
+    nexusmods-app-unfree
 
     # launchers
     cockatrice

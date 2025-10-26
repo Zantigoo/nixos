@@ -2,6 +2,7 @@
   imports = [
     ../default.nix
     #./anyrun
+    ./options
     ./hyprland
     ./theme
     ./shell

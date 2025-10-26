@@ -11,7 +11,7 @@
     winetricks
     protontricks
     nexusmods-app-unfree
-
+    r2modman
     # launchers
     cockatrice
     lutris

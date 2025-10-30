@@ -27,7 +27,7 @@
       "$app1" = "$browser";
       "$app2" = "$fileManager";
       "$app3" = "obsidian";
-
+      
       exec-once = [
         "hyprpanel"
         "blueman-applet"

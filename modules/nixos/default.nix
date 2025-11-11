@@ -7,9 +7,7 @@
     ./windowManager
     ./bootloader
     ./packages
-    ./polkit
     ./networking
-    ./pam
     ./plymouth
     ./ssh
     ./gaming

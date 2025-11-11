@@ -4,13 +4,6 @@
   inputs,
   ...
 }: {
-  imports = [
-    ./hyprlock.nix
-    ./hyprpaper.nix
-  ];
-
-  
-
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {

@@ -10,7 +10,7 @@
     ./keyring
     ./rofi
     ./gaming
-    #./waybar
+    ./waybar
     #./wlogout
     #./walker
     ./neovim

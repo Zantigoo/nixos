@@ -1,8 +1,6 @@
-{
-  ...
-}:{
-    imports = [  
-    ../default.nix
-    ./hyprland
-    ];
-  }
+{...} : {
+  imports = [
+    ./hyprland.nix
+  #  ./niri.nix
+  ];
+}

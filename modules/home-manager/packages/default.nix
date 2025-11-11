@@ -9,6 +9,7 @@
     ./ghostty.nix
     ./kitty.nix
     ./wezterm.nix
+    ./fuzzel.nix
   ];
 
   home.packages = with pkgs; [
@@ -19,7 +20,7 @@
     p7zip
 
     # desktop apps
-    bitwarden
+    bitwarden-desktop
     vesktop
     obs-studio
     obsidian
@@ -50,6 +51,7 @@
     clipse
     wl-clipboard
     
+
     # compilers and runtimes
     nodejs
     bun

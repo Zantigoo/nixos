@@ -22,7 +22,6 @@
     pandoc
     unrar
     brightnessctl
-    hyprpanel
     pulseaudio
     blueman
     ffmpeg

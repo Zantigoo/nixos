@@ -8,12 +8,13 @@
 {
   imports = [
     ./mako.nix
+    ./swaylock.nix
   ];
 
 
   programs.waybar = {
 
-    enable = false;
+    enable = true;
 
     style = ''
       @import "mocha.css";

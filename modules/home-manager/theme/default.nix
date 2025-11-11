@@ -60,6 +60,8 @@
       rofi.enable = true;
       mpv.enable = true;
       helix.enable = true;
+      fuzzel.enable = true;
+      swaylock.enable = true;
     };
 
     iconTheme = {

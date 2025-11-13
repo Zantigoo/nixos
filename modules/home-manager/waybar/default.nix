@@ -9,6 +9,7 @@
   imports = [
     ./mako.nix
     ./swaylock.nix
+    ./swww.nix
   ];
 
 

@@ -22,19 +22,21 @@
     # desktop apps
     bitwarden-desktop
     vesktop
-    obs-studio
     obsidian
     blockbench
     localsend
     eog
     krita
     slack
-    deluge
     onlyoffice-desktopeditors
-    jocalsend
+    protonvpn-gui
+    qbittorrent
 
     # terminal time
     mpv
+    
+    # wallpaper
+    waypaper
 
     # screen capturing
     grim
@@ -42,10 +44,6 @@
     imagemagick
     swappy
     gpu-screen-recorder
-
-    #hypr utils
-    hyprpicker
-    hyprshot
     
     #clipboard
     clipse

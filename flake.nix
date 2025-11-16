@@ -2,8 +2,20 @@
   description = "Nixos config flake";
 
   inputs = {
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.dgop.follows = "dgop";
+    };
+    dgop = {
+      url = "github:AvengeMedia/dgop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    hyprpicker.url = "github:hyprwm/hyprpicker";
     nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
     nixvim = {

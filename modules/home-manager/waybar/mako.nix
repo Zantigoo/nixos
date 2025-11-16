@@ -7,7 +7,7 @@
 
 {
   services.mako = {
-    enable = true;
+    enable = false;
     backgroundColor = "#1e1e2e";
     textColor = "#cdd6f4";
     progressColor = "over #313244";

@@ -7,15 +7,15 @@
 
 {
   imports = [
-    ./mako.nix
-    ./swaylock.nix
-    ./swww.nix
+  #  ./mako.nix
+  #  ./swaylock.nix
+  #  ./swww.nix
   ];
 
 
   programs.waybar = {
 
-    enable = true;
+    enable = false;
 
     style = ''
       @import "mocha.css";

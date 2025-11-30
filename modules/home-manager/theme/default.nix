@@ -60,7 +60,6 @@
       rofi.enable = true;
       mpv.enable = true;
       helix.enable = true;
-      niri.enable = true;
     };
 
     iconTheme = {

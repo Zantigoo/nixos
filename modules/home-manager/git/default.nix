@@ -3,8 +3,12 @@
 {
   programs.git = {
     enable = true;
-    settings.userName = "Zantigo";
-    settings.userEmail = "Zantigo@pm.me";
+      settings = {
+        user = {
+          name = "Zantigo";
+          email = "Zantigo@pm.me";
+        };
+      };
   };
 
   # github cli

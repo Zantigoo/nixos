@@ -23,11 +23,11 @@
     unrar
     brightnessctl
     pulseaudio
-    blueman
     ffmpeg
     ripgrep
     zoxide    
-    
+    bluetui
+
     #dependants
     zenity
     evince
@@ -38,7 +38,6 @@
     pkg-config
     wrapGAppsHook4
     gdk-pixbuf
-    gsettings-desktop-schemas
     librsvg
     pango
     nautilus
@@ -53,7 +52,6 @@
   programs.nautilus-open-any-terminal = {
     enable = true;
   };
-  programs.nm-applet.enable = true;
 
   services.udev.packages = with pkgs; [
     via

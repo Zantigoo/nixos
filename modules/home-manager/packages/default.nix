@@ -10,6 +10,7 @@
     ./kitty.nix
     ./wezterm.nix
     ./fuzzel.nix
+    ./zen.nix
   ];
 
   home.packages = with pkgs; [

@@ -9,7 +9,6 @@
     ./ghostty.nix
     ./kitty.nix
     ./wezterm.nix
-    ./fuzzel.nix
     ./zen.nix
   ];
 
@@ -17,7 +16,6 @@
     # desktop utilities
     xarchiver
     pavucontrol
-    handlr
     p7zip
 
     # desktop apps
@@ -32,18 +30,12 @@
     onlyoffice-desktopeditors
     protonvpn-gui
     qbittorrent
+    warehouse
 
     # terminal time
     mpv
-    
-    # wallpaper
-    waypaper
 
     # screen capturing
-    grim
-    slurp
-    imagemagick
-    swappy
     gpu-screen-recorder
     
     #clipboard

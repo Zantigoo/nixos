@@ -10,8 +10,8 @@
     wine-wayland
     winetricks
     protontricks
-    nexusmods-app-unfree
-
+    deadlock-mod-manager
+    nexusmods-app
     # launchers
     cockatrice
     lutris

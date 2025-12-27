@@ -13,6 +13,5 @@
     niri = {
       enableSpawn = true;
     };
-    enableSystemSound = true;
   };
 }

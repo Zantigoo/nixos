@@ -1,0 +1,11 @@
+{
+  "name": "Theme Name",
+  "primary": "#eeeeee",
+  "primaryText": "#000000",
+  "surface": "#ffffff",
+  "surfaceText": "#000000",
+  "background": "#f5f5f5",
+  "backgroundText": "#000000",
+  "outline": "#cccccc",
+  "matugen_type": "scheme-tonal-spot"
+}

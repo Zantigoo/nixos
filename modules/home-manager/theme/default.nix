@@ -1,8 +1,9 @@
 {
   pkgs,
+  inputs,
   ...
 }: {
-
+  imports = [inputs.niri.homeModules.stylix];
   stylix = {
     enable = true;
     autoEnable = false;

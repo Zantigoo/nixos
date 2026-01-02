@@ -11,7 +11,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet -t -r --remember-session --asterisks niri";
+        command = "${pkgs.tuigreet}/bin/tuigreet -t -r --remember-session --asterisks niri-session";
         user = "greeter";
       };
     };

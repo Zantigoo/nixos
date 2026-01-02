@@ -3,7 +3,10 @@
   inputs,
   ...
 }: {
-  imports = [inputs.niri.homeModules.stylix];
+  imports = [
+    inputs.niri.homeModules.stylix
+    inputs.niri.homeModules
+  ];
   stylix = {
     enable = true;
     autoEnable = false;
@@ -61,6 +64,7 @@
       rofi.enable = true;
       mpv.enable = true;
       helix.enable = true;
+      niri.enable = true;
     };
 
     iconTheme = {

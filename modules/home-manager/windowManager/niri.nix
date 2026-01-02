@@ -3,7 +3,11 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+let 
+  color = config.stylix.base16Scheme;
+in
+{
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];
   programs.niri = {
     settings = {
@@ -17,7 +21,6 @@
 
         "Mod+Shift+Left".action.focus-monitor-left = {};
         "Mod+Shift+Right".action.focus-monitor-right = {};
-        
 
         "XF86AudioRaiseVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"];
         "XF86AudioLowerVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"];
@@ -39,14 +42,16 @@
         "Mod+Ctrl+Up".action = move-window-up;
         "Mod+Ctrl+Right".action = move-column-right;
 
+        "Mod+W".action = toggle-column-tabbed-display;
         "Mod+Period".action = expel-window-from-column;
 
         "Mod+R".action = switch-preset-column-width;
         "Mod+Shift+R".action = switch-preset-window-height;
         "Mod+Shift+F".action = fullscreen-window;
-        "Mod+F".action = maximize-column;
-        "Mod+Ctrl+F".action = expand-column-to-available-width;
+        "Mod+Ctrl+F".action = maximize-column;
+        "Mod+F".action = expand-column-to-available-width;
         "Mod+C".action = center-column;
+
         "Print".action.screenshot.show-pointer = true;
         "Ctrl+Print".action.screenshot-window.write-to-disk = true;
 
@@ -74,7 +79,35 @@
           accel-speed = 0.2;
         };
       };
+
       prefer-no-csd = true;
+      hotkey-overlay.skip-at-startup = true;
+      
+      layout.default-column-display = "tabbed";
+
+      window-rules = [
+      {
+        matches = [{app-id = "org.wezfurlong.wezterm";}];
+        default-column-width = {proportion = 0.5;};
+      }
+      {
+        matches = [{app-id = "steam";}];
+        default-column-width = {proportion = 1.0;};
+      }
+      {
+        matches = [
+          {
+            title = "Friends List";
+            app-id = "steam";
+          }
+        ];
+        default-column-width = {fixed = 340;};
+      }
+      {
+        matches = [{app-id = "Waydroid";}];
+        default-column-width = {fixed = 1256;};
+      }
+      ];
     };
   };
 } 

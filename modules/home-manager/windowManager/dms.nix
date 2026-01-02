@@ -10,8 +10,8 @@
 
   programs.dankMaterialShell = {
     enable = true;
-    niri = {
-      enableSpawn = true;
+    systemd = {
+      enable = true;
     };
   };
 }

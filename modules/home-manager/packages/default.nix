@@ -31,6 +31,7 @@
     protonvpn-gui
     qbittorrent
     warehouse
+    obs-studio
 
     # terminal time
     mpv

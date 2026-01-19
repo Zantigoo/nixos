@@ -30,6 +30,9 @@
       8000 #Gen Purpose
       25565 #Minecraft Server
     ];
+    allowedUDPPorts = [
+      52102
+      5520
+    ];
   };
-
 }

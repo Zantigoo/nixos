@@ -10,7 +10,6 @@
     ./networking
     ./plymouth
     ./ssh
-    ./gaming
     ./theme
     ./virtualization
     ./printing
@@ -43,13 +42,6 @@ nix = {
     rocmSupport = true;
   };
 
-  fileSystems."/run/media/zantigo/Deep_Storage" = { 
-    device = "/dev/disk/by-uuid/A09E66D19E669F90";
-    fsType = "ntfs-3g"; 
-    options = [ "rw" "uid=1000"];
-  };
-  
-
   # enable additional services
 
   services = {
@@ -78,8 +70,6 @@ nix = {
     enable = true;
     binfmt = true;
   };
-  
-  virtualisation.waydroid.enable = true;
 
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
   environment.sessionVariables = {

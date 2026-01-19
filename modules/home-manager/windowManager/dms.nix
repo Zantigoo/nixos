@@ -3,8 +3,8 @@
   ...
 }: {
   imports = [
-    inputs.dankMaterialShell.homeModules.dankMaterialShell.default
-    inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
+    inputs.dankMaterialShell.homeModules.default
+    inputs.dankMaterialShell.homeModules.niri
     inputs.niri.homeModules.niri
   ];
 
@@ -13,5 +13,8 @@
     systemd = {
       enable = true;
     };
+    enableVPN = true;
+    enableAudioWavelength = true;
+
   };
 }

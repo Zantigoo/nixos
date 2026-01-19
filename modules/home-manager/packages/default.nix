@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{pkgs, ...}: 
+{
 
   imports = [
     ./btop.nix
@@ -14,9 +15,7 @@
 
   home.packages = with pkgs; [
     # desktop utilities
-    xarchiver
     pavucontrol
-    p7zip
 
     # desktop apps
     bitwarden-desktop
@@ -32,9 +31,11 @@
     qbittorrent
     warehouse
     obs-studio
+    nicotine-plus
 
     # terminal time
     mpv
+    p7zip
 
     # screen capturing
     gpu-screen-recorder
@@ -43,7 +44,6 @@
     clipse
     wl-clipboard
     
-
     # compilers and runtimes
     nodejs
     bun

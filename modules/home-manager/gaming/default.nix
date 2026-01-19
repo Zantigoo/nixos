@@ -11,7 +11,7 @@
     winetricks
     protontricks
     deadlock-mod-manager
-    nexusmods-app
+
     # launchers
     cockatrice
     lutris

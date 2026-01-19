@@ -5,7 +5,7 @@
   ...
 }:
 let 
-  color = config.stylix.base16Scheme;
+  colors = config.lib.stylix.colors.withHashtag;
 in
 {
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];
@@ -29,7 +29,7 @@ in
 
         "Mod+Tab".action = toggle-overview;
         "Mod+Tab".repeat = false;
-        "Mod+Shift+E".action = quit;
+        "Mod+Shift+Alt+Q".action = quit;
         "Mod+Q".action = close-window;
         "Mod+V".action = toggle-window-floating;
 
@@ -54,7 +54,8 @@ in
 
         "Print".action.screenshot.show-pointer = true;
         "Ctrl+Print".action.screenshot-window.write-to-disk = true;
-
+        
+        "Mod+U".action = set-dynamic-cast-window;
       };
 
       gestures = {
@@ -75,7 +76,7 @@ in
       input = {
         focus-follows-mouse.enable = true;
         mouse = {
-          accel-profile = "flat";
+         accel-profile = "flat";
           accel-speed = 0.2;
         };
       };
@@ -83,16 +84,31 @@ in
       prefer-no-csd = true;
       hotkey-overlay.skip-at-startup = true;
       
-      layout.default-column-display = "tabbed";
+      overview = {
+        backdrop-color = colors.base01;
+      };
 
-      window-rules = [
+      layout = {
+        default-column-display = "tabbed";
+        tab-indicator = {
+          enable = true;
+          gaps-between-tabs = 5.5;
+          corner-radius = 10;
+          hide-when-single-tab = true;
+        };
+        
+      };
+
+  window-rules = [
       {
         matches = [{app-id = "org.wezfurlong.wezterm";}];
         default-column-width = {proportion = 0.5;};
+        border.active.color = colors.base0B;
       }
       {
         matches = [{app-id = "steam";}];
         default-column-width = {proportion = 1.0;};
+        border.active.color = colors.base0D;
       }
       {
         matches = [
@@ -106,6 +122,10 @@ in
       {
         matches = [{app-id = "Waydroid";}];
         default-column-width = {fixed = 1256;};
+      }
+      {
+        matches = [{app-id = "Firefox";}];
+        border.active.color = colors.base09;
       }
       ];
     };

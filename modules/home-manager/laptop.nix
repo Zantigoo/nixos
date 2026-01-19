@@ -7,7 +7,6 @@
     ./packages
     ./git
     ./keyring
-    ./gaming
     ./neovim
   ];
 

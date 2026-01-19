@@ -4,9 +4,6 @@
   inputs,
   ...
 }:
-let 
-  colors = config.lib.stylix.colors.withHashtag;
-in
 {
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];
   programs.niri = {
@@ -103,12 +100,12 @@ in
       {
         matches = [{app-id = "org.wezfurlong.wezterm";}];
         default-column-width = {proportion = 0.5;};
-        border.active.color = colors.base0B;
+        #border.active.color = colors.base0B;
       }
       {
         matches = [{app-id = "steam";}];
         default-column-width = {proportion = 1.0;};
-        border.active.color = colors.base0D;
+       #border.active.color = colors.base0D;
       }
       {
         matches = [
@@ -125,7 +122,7 @@ in
       }
       {
         matches = [{app-id = "Firefox";}];
-        border.active.color = colors.base09;
+        #border.active.color = colors.base09;
       }
       ];
     };

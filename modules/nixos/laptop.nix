@@ -10,7 +10,7 @@
     ./networking
     ./plymouth
     ./ssh
-    ./theme
+    #./theme
     ./virtualization
     ./printing
   ];

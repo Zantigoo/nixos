@@ -56,6 +56,12 @@
             ./hosts/server/configuration.nix
         ];
       };
+      grimoire = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          ./hosts/laptop/configuration.nix
+        ];
+      };
     };
   };
 }

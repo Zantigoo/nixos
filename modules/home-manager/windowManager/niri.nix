@@ -82,7 +82,6 @@
       hotkey-overlay.skip-at-startup = true;
       
       overview = {
-        backdrop-color = colors.base01;
       };
 
       layout = {

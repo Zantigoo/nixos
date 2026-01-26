@@ -2,7 +2,7 @@
   imports = [
     ../default.nix
     ./windowManager
-    #./theme
+    ./theme
     ./shell
     ./packages
     ./git

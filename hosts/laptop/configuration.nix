@@ -8,6 +8,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../modules/nixos/laptop.nix
+    inputs.stylix.nixosModules.stylix
   ];
 
   # enable the x11 windowing system.

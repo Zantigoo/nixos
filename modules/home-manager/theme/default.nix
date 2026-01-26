@@ -64,7 +64,7 @@
       helix.enable = true;
     };
 
-    icons = {
+    iconTheme = {
       enable = true;
       package = pkgs.papirus-icon-theme;
       dark = "Papirus-Dark";

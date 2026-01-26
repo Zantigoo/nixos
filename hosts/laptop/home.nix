@@ -9,7 +9,6 @@
   # manage.
   home.username = "zantigo";
   home.homeDirectory = "/home/zantigo"; 
-
   # env vars
   home.sessionVariables = {
     EDITOR = "nvim";

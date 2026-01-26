@@ -10,9 +10,10 @@
     ./networking
     ./plymouth
     ./ssh
-    #./theme
+    ./theme
     ./virtualization
     ./printing
+    ./power-management.nix
   ];
 
 #  xdg.mime.defaultApplications = {
@@ -24,6 +25,7 @@
 #     autoUpgrade.dates = "weekly";
 #};
 
+networking.hostName = "Grimoire"; # Define your hostname.
 nix = {
     settings = {
       experimental-features = ["nix-command" "flakes"];
@@ -75,5 +77,6 @@ nix = {
   environment.sessionVariables = {
     HYPRSHOT_DIR = "/home/zantigo/Pictures/Clips/Screenshots";
   };
-
+  
+  programs.nix-ld.enable = true;
 }

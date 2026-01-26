@@ -27,18 +27,11 @@
     ripgrep
     zoxide    
     bluetui
+    powershell
+    rclone
 
     #dependants
-    zenity
-    evince
-    glib
-    gobject-introspection
-    gtk3
-    gtk4
-    pkg-config
-    wrapGAppsHook4
-    gdk-pixbuf
-    librsvg
+
     pango
     nautilus
     nautilus-python

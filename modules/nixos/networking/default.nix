@@ -8,7 +8,6 @@
   
   # enable networking
   networking.networkmanager.enable = true; 
-  networking.hostName = "Library"; # Define your hostname.
   networking.networkmanager.wifi.macAddress = "random";
   # enable bluetooth
   hardware.bluetooth = {

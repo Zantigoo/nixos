@@ -33,6 +33,8 @@
     warehouse
     obs-studio
     nicotine-plus
+    zoom-us
+    freerdp
 
     # terminal time
     mpv

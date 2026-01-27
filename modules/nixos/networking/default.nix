@@ -28,6 +28,7 @@
       53317 #LocalSend
       8000 #Gen Purpose
       25565 #Minecraft Server
+      1714
     ];
     allowedUDPPorts = [
       52102

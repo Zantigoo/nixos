@@ -38,7 +38,8 @@
     papirus-icon-theme
     firefoxpwa
     tuigreet
-    
+    distrobox
+
   ];
 
   programs.gnome-disks.enable = true;

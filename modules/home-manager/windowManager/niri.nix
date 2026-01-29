@@ -18,6 +18,9 @@
 
         "Mod+Shift+Left".action.focus-monitor-left = {};
         "Mod+Shift+Right".action.focus-monitor-right = {};
+#        "Mod+Shift+Up".action = ;
+#        "Mod+Shift+Down".action = ;
+
 
         "XF86AudioRaiseVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"];
         "XF86AudioLowerVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"];
@@ -45,8 +48,8 @@
         "Mod+R".action = switch-preset-column-width;
         "Mod+Shift+R".action = switch-preset-window-height;
         "Mod+Shift+F".action = fullscreen-window;
-        "Mod+Ctrl+F".action = maximize-column;
-        "Mod+F".action = expand-column-to-available-width;
+        "Mod+Ctrl+F".action = expand-column-to-available-width;
+        "Mod+F".action = maximize-column;
         "Mod+C".action = center-column;
 
         "Print".action.screenshot.show-pointer = true;

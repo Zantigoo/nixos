@@ -11,7 +11,7 @@
     ./kitty.nix
     ./wezterm.nix
     ./zen.nix
-#    ./kde-connect.nix
+    ./kde-connect.nix
   ];
 
   home.packages = with pkgs; [

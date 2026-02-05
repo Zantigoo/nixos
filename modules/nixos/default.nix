@@ -84,6 +84,7 @@ nix = {
   environment.variables.WLR_NO_HARDWARE_CURSORS = "1";
   environment.sessionVariables = {
     HYPRSHOT_DIR = "/home/zantigo/Pictures/Clips/Screenshots";
+    TERMINAL = "wezterm";
   };
 
 }

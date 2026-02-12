@@ -66,7 +66,7 @@ nix = {
   };
 
 
-  users.users.zantigo.extraGroups = ["adbusers" "dialout"];
+  users.users.zantigo.extraGroups = ["adbusers" "dialout" "docker"];
 
   programs.appimage = {
     enable = true;

@@ -33,6 +33,7 @@
     warehouse
     obs-studio
     nicotine-plus
+    winboat
 
     # terminal time
     mpv

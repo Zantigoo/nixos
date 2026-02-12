@@ -12,6 +12,7 @@
     ./wezterm.nix
     ./zen.nix
     ./kde-connect.nix
+    ./wlr-which-key.nix
   ];
 
   home.packages = with pkgs; [

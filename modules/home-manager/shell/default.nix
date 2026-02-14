@@ -18,4 +18,9 @@
     recgpu = "bash ~/bin/start-stop-recording.sh";
     clipgpu = "bash ~/bin/save-replay.sh";
   };
+
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    TERMINAL = "wezterm";
+  };
 }

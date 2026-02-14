@@ -48,7 +48,6 @@
     wl-clipboard
     
     # compilers and runtimes
-    nodejs
     bun
     go
     

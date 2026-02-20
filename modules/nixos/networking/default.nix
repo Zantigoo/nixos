@@ -21,7 +21,10 @@
       
     };
    };
-
+  nix.settings.trusted-users = [
+    "root"
+    "zantigo"
+  ];
   networking.firewall = rec {
     enable = true;
     allowedTCPPorts = [

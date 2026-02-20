@@ -24,8 +24,9 @@
 #     autoUpgrade.enable = true;
 #     autoUpgrade.dates = "weekly";
 #};
-
+networking.hostName = "Library"; # Define your hostname.
 nix = {
+  
     settings = {
       experimental-features = ["nix-command" "flakes"];
       auto-optimise-store = true;

@@ -5,6 +5,19 @@
     which-key.enable = true;
     flash.enable = true;
     conform-nvim.enable = true;
+    yazi.enable = true;
+    dap.enable = true;
+    trouble.enable = true;
+    oil.enable = true;
+    cmp = {
+      enable = true;
+      autoEnableSources = false;
+      settings.sources = [
+        { name = "nvim_lsp"; }
+        { name = "path"; }
+        { name = "buffer"; }
+      ];
+    };
     mini = {
      enable = true;
     };
@@ -40,6 +53,9 @@
         vue_ls.enable = true;
         golangci_lint_ls.enable = true;
       };
+    };
+    lint = {
+      enable = true;
     };
   };  
 }

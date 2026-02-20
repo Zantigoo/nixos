@@ -2,7 +2,6 @@
   imports = [
     ./fonts.nix
     ./syncthing.nix
-    ./ollama.nix
     ./firefox.nix
   ];
 

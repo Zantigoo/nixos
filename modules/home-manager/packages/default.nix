@@ -26,7 +26,6 @@
     blockbench
     localsend
     eog
-    krita
     slack
     onlyoffice-desktopeditors
     protonvpn-gui
@@ -34,7 +33,6 @@
     warehouse
     obs-studio
     nicotine-plus
-    winboat
 
     # terminal time
     mpv

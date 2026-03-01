@@ -15,6 +15,6 @@
     };
     enableVPN = true;
     enableAudioWavelength = true;
-
+    enableCalendarEvents = false;
   };
 }

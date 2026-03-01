@@ -9,6 +9,7 @@
     dap.enable = true;
     trouble.enable = true;
     oil.enable = true;
+    wezterm.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = false;

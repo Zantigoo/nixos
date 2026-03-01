@@ -28,6 +28,7 @@
     bluetui
     powershell
     rclone
+    nmap
 
     #dependants
 

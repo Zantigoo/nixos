@@ -33,6 +33,7 @@
     warehouse
     obs-studio
     nicotine-plus
+    rustdesk
 
     # terminal time
     mpv
@@ -50,5 +51,4 @@
     go
     
   ];
-
 }

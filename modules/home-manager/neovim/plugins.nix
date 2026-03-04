@@ -58,5 +58,41 @@
     lint = {
       enable = true;
     };
+    emmet = {
+      enable = true;
+      settings = {
+        leader = "<C-Z>";
+        mode = "inv";
+        settings = {
+          html = {
+            default_attributes = {
+              option = {
+              };
+              textarea = {
+                cols = 10;
+                rows = 10;
+              };
+            };
+            snippets = {
+              "html:5" = ''
+              <!DOCTYPE html>
+              <html lang=\"$\{lang}\">
+              <head>
+              \t<meta charset=\"$\{charset}\">
+              \t<title></title>
+              \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+              </head>
+              <body>\n\t$\{child}|\n</body>
+              </html>
+             '';
+            };
+          };
+
+          variables = {
+            lang = "ja";
+          };
+        };
+      };
+    };
   };  
 }

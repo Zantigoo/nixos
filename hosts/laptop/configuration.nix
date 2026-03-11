@@ -37,6 +37,7 @@
 
 
 
+  networking.hostName = "Grimoire"; # Define your hostname.
   # set home manager
   home-manager = {
     extraSpecialArgs = {inherit inputs;};

@@ -8,13 +8,13 @@
     inputs.niri.homeModules.niri
   ];
 
-  programs.dankMaterialShell = {
+  programs.dank-material-shell = {
     enable = true;
     systemd = {
       enable = true;
     };
     enableVPN = true;
     enableAudioWavelength = true;
-    enableCalendarEvents = false;
+    enableCalendarEvents = true;
   };
 }

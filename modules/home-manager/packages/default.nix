@@ -26,7 +26,6 @@
     blockbench
     localsend
     eog
-    slack
     onlyoffice-desktopeditors
     protonvpn-gui
     qbittorrent
@@ -38,6 +37,7 @@
     # terminal time
     mpv
     p7zip
+    serpl
 
     # screen capturing
     gpu-screen-recorder

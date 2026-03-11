@@ -25,7 +25,6 @@
 #     autoUpgrade.dates = "weekly";
 #};
 
-networking.hostName = "Grimoire"; # Define your hostname.
 nix = {
     settings = {
       experimental-features = ["nix-command" "flakes"];

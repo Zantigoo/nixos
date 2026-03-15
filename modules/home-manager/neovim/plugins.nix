@@ -10,6 +10,7 @@
     trouble.enable = true;
     oil.enable = true;
     wezterm.enable = true;
+    obsidian.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = false;
@@ -62,7 +63,7 @@
       enable = true;
       settings = {
         leader = "<C-Z>";
-        mode = "inv";
+        mode = "ins";
         settings = {
           html = {
             default_attributes = {

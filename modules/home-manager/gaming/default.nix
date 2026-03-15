@@ -6,7 +6,7 @@
   home.packages = with pkgs; [
     
     # utilities
-    wineWowPackages.waylandFull
+    wineWow64Packages.waylandFull
     wine-wayland
     winetricks
     protontricks

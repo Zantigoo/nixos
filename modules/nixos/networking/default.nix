@@ -25,6 +25,11 @@
     "root"
     "zantigo"
   ];
+  
+  networking.hosts = {
+    "192.168.20.165" = ["LUprintServer.local"];
+  };
+
   networking.firewall = rec {
     enable = true;
     allowedTCPPorts = [

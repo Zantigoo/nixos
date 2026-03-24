@@ -33,6 +33,7 @@
     obs-studio
     nicotine-plus
     rustdesk
+    zoom-us
 
     # terminal time
     mpv

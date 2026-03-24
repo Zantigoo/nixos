@@ -10,6 +10,7 @@
     trouble.enable = true;
     oil.enable = true;
     wezterm.enable = true;
+    obsidian.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = false;

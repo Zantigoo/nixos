@@ -24,7 +24,6 @@
     pulseaudio
     ffmpeg
     ripgrep
-    zoxide    
     bluetui
     powershell
     rclone

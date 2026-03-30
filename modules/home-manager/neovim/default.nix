@@ -31,7 +31,7 @@ inputs,
 						smartindent = true;
 						cursorline = true;
 						breakindent = true;
-						cmdheight = 0;
+						cmdheight = 1;
 						splitright = true;
 						mouse = "a";
 						number = true;

@@ -1,4 +1,4 @@
-{pkgs, ...}: 
+{ pkgs, ... }:
 {
 
   imports = [
@@ -13,6 +13,7 @@
     ./zen.nix
     ./kde-connect.nix
     ./wlr-which-key.nix
+    ./easyeffects.nix
   ];
 
   home.packages = with pkgs; [
@@ -42,14 +43,14 @@
 
     # screen capturing
     gpu-screen-recorder
-    
+
     #clipboard
     clipse
     wl-clipboard
-    
+
     # compilers and runtimes
     bun
     go
-    
+
   ];
 }

@@ -3,6 +3,7 @@
     ./fonts.nix
     ./syncthing.nix
     ./firefox.nix
+    ./zoxide.nix
   ];
 
   # system packages

@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  config,
   ...
 }: {
   imports = [
@@ -117,8 +118,8 @@
   # enable gtk
   gtk = {
     enable = true;
-
     # gtk theme
+    gtk4.theme = config.gtk.theme;
     /*catppuccin = {
       enable = true;
       accent = "mauve";

@@ -28,7 +28,6 @@
     localsend
     eog
     onlyoffice-desktopeditors
-    protonvpn-gui
     qbittorrent
     warehouse
     obs-studio

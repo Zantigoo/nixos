@@ -21,7 +21,7 @@
       qt.enable = true;
     };
   };
-
+  
   # Catpuccin-Mocha Cheat Sheet
   # base00: "1e1e2e" # base
   # base01: "181825" # mantle

@@ -14,6 +14,7 @@
     ./theme
     ./virtualization
     ./printing
+    ./sdr
   ];
 
 #  xdg.mime.defaultApplications = {

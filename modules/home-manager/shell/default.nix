@@ -17,6 +17,7 @@
     discord = "vesktop";
     recgpu = "bash ~/bin/start-stop-recording.sh";
     clipgpu = "bash ~/bin/save-replay.sh";
+    mntworkdrive = "rclone mount LU-Workdrive:/ ~/mnt/zoho-personal --vfs-cache-mode writes"; 
   };
 
   home.sessionVariables = {

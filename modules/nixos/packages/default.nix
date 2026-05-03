@@ -29,6 +29,7 @@
     powershell
     rclone
     nmap
+    python3
 
     #dependants
 

@@ -8,6 +8,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../modules/nixos/laptop.nix
+    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen5
     inputs.stylix.nixosModules.stylix
   ];
 

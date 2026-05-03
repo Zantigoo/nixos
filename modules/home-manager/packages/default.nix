@@ -19,6 +19,8 @@
   home.packages = with pkgs; [
     # desktop utilities
     pavucontrol
+    chromium
+
 
     # desktop apps
     bitwarden-desktop
@@ -34,6 +36,9 @@
     nicotine-plus
     rustdesk
     zoom-us
+    calibre
+    
+
 
     # terminal time
     mpv
@@ -50,6 +55,7 @@
     # compilers and runtimes
     bun
     go
+    python3
 
   ];
 }

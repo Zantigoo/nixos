@@ -14,6 +14,7 @@
     ./virtualization
     ./printing
     ./power-management.nix
+    ./sdr
   ];
 
 #  xdg.mime.defaultApplications = {

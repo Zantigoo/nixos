@@ -4,6 +4,7 @@
     ./syncthing.nix
     ./firefox.nix
     ./zoxide.nix
+    ./locate.nix
   ];
 
   # system packages
@@ -30,6 +31,7 @@
     rclone
     nmap
     python3
+    fd
 
     #dependants
 

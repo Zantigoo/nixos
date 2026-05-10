@@ -34,10 +34,9 @@
     warehouse
     obs-studio
     nicotine-plus
-    rustdesk
     zoom-us
-    calibre
-    
+    vscodium
+    google-chrome
 
 
     # terminal time
@@ -56,6 +55,6 @@
     bun
     go
     python3
-
+    python313Packages.pip
   ];
 }

@@ -36,8 +36,7 @@
     nicotine-plus
     zoom-us
     vscodium
-    google-chrome
-
+    rustdesk
 
     # terminal time
     mpv

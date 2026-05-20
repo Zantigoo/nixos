@@ -15,6 +15,7 @@
     ./virtualization
     ./printing
     ./sdr
+    ./zoho
   ];
 
 #  xdg.mime.defaultApplications = {

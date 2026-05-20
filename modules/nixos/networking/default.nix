@@ -8,7 +8,8 @@
   
   # enable networking
   networking.networkmanager.enable = true; 
-  networking.networkmanager.wifi.macAddress = "random";
+  networking.networkmanager.wifi.macAddress = "stable-ssid";
+
   # enable bluetooth
   hardware.bluetooth = {
     enable = true;
@@ -18,7 +19,6 @@
         MultiProfile = "multiple";
         Disable = "Headset";
       };
-      
     };
    };
   nix.settings.trusted-users = [

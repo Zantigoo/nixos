@@ -2,11 +2,6 @@
 
 {
   # Enable the Hyprland Window Manager
-  programs.hyprland = {
-    enable = false;
-    xwayland.enable = true;
-  };
-
   programs.niri = {
     enable = true;
   };

@@ -36,12 +36,12 @@
     nicotine-plus
     zoom-us
     vscodium
-    rustdesk
 
     # terminal time
     mpv
     p7zip
     serpl
+    jpegoptim
 
     # screen capturing
     gpu-screen-recorder

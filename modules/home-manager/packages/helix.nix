@@ -20,6 +20,7 @@
           display-messages = true;
           display-inlay-hints = true;
         };
+        default-yank-register="+";
         color-modes = true;
         statusline = {
           left = ["mode" "spinner" "file-name" "file-modification-indicator"];

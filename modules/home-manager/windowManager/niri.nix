@@ -83,7 +83,7 @@
 
       prefer-no-csd = true;
       hotkey-overlay.skip-at-startup = true;
-      
+      clipboard.disable-primary = true;
       overview = {
        # backdrop-color = colors.base01;
       };

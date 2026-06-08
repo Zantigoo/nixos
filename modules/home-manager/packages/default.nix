@@ -18,7 +18,6 @@
   home.packages = with pkgs; [
     # desktop utilities
     pavucontrol
-    chromium
 
 
     # desktop apps
@@ -35,6 +34,9 @@
     zoom-us
     vscodium
     krita
+    gnome-text-editor
+    chromium
+
 
     # terminal time
     mpv

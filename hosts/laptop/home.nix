@@ -11,8 +11,6 @@
   home.homeDirectory = "/home/zantigo"; 
   # env vars
   home.sessionVariables = {
-    EDITOR = "nvim";
-
     NIXOS_OZONE_WL = "1";
   };
 

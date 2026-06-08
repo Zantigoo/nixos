@@ -17,11 +17,14 @@
     discord = "vesktop";
     recgpu = "bash ~/bin/start-stop-recording.sh";
     clipgpu = "bash ~/bin/save-replay.sh";
-    mntworkdrive = "rclone mount LU-Workdrive:/ ~/mnt/zoho-personal --vfs-cache-mode writes"; 
+    mntworkdrive = "rclone mount LU-Workdrive:/ ~/mnt/zoho-personal --vfs-cache-mode writes";
+    pyS = "source ~/.script-env/bin/activate && python";
+    zd = "z";
+    cd = "z";
   };
 
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "hx";
     TERMINAL = "wezterm";
   };
 }

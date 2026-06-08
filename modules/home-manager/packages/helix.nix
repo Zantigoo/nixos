@@ -10,8 +10,12 @@
       {
         name = "nix";
         auto-format = true;
-        formatter.command = lib.getExe pkgs.nixfmt;
-        
+        formatter.command = lib.getExe pkgs.nixfmt; 
+      }
+      {
+        name = "json";
+        auto-format = true;
+        formatter.command = lib.getExe pkgs.vscode-json-languageserver;
       }
     ];
     settings = {

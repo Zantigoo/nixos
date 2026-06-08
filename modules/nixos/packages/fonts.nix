@@ -9,5 +9,6 @@
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
     nerd-fonts.fira-code
+    dejavu_fonts
   ];
 }

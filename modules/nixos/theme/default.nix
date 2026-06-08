@@ -16,7 +16,6 @@
       grub = {
         enable = true;
       };
-      gtk.enable = true;
       plymouth.enable = true;
       qt.enable = true;
     };

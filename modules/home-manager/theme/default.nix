@@ -36,9 +36,15 @@
       monospace = {
         name = "Fira Code";
         package = pkgs.fira-code;
-
       };
-      
+      serif = {
+      package = pkgs.dejavu_fonts;
+      name = "DejaVu Serif";
+      };
+      sansSerif = {
+      package = pkgs.dejavu_fonts;
+      name = "DejaVu Sans";
+      };
     };   
     
     cursor = {
@@ -48,7 +54,6 @@
     };
 
     targets = {
-      gtk.enable = true;
       gnome.enable = true;
       hyprland.enable = false;
       kitty.enable = true;
@@ -63,6 +68,8 @@
       rofi.enable = true;
       mpv.enable = true;
       helix.enable = true;
+      gtk.enable = true;
+
     };
 
     icons = {
@@ -119,7 +126,6 @@
   gtk = {
     enable = true;
     # gtk theme
-    gtk4.theme = config.gtk.theme;
     /*catppuccin = {
       enable = true;
       accent = "mauve";

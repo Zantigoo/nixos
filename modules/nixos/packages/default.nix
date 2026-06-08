@@ -2,7 +2,6 @@
   imports = [
     ./fonts.nix
     ./syncthing.nix
-    ./firefox.nix
     ./zoxide.nix
     ./locate.nix
   ];
@@ -39,7 +38,6 @@
     nautilus
     nautilus-python
     papirus-icon-theme
-    firefoxpwa
     tuigreet
     distrobox
 

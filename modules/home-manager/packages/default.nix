@@ -7,13 +7,12 @@
     ./fzf.nix
     ./helix.nix
     ./yazi.nix
-    ./ghostty.nix
-    ./kitty.nix
     ./wezterm.nix
     ./zen.nix
     ./kde-connect.nix
     ./wlr-which-key.nix
     ./easyeffects.nix
+    ./firefox.nix
   ];
 
   home.packages = with pkgs; [
@@ -23,7 +22,6 @@
 
 
     # desktop apps
-    bitwarden-desktop
     vesktop
     obsidian
     blockbench
@@ -36,6 +34,7 @@
     nicotine-plus
     zoom-us
     vscodium
+    krita
 
     # terminal time
     mpv

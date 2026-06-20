@@ -21,6 +21,7 @@
     pyS = "source ~/.script-env/bin/activate && python";
     zd = "z";
     cd = "z";
+    processimages = "~/Documents/code/scripts/bash/process_images.sh";
   };
 
   home.sessionVariables = {

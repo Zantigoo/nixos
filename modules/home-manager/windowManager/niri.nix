@@ -18,8 +18,8 @@
 
         "Mod+Shift+Left".action.focus-monitor-left = {};
         "Mod+Shift+Right".action.focus-monitor-right = {};
-#        "Mod+Shift+Up".action = ;
-#        "Mod+Shift+Down".action = ;
+        "Mod+Shift+Up".action.focus-workspace-up = {};
+        "Mod+Shift+Down".action.focus-workspace-down ={};
 
 
         "XF86AudioRaiseVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"];

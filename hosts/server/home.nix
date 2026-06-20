@@ -12,7 +12,6 @@
 
   # env vars
   home.sessionVariables = {
-    EDITOR = "nvim";
   };
 
   home.stateVersion = "23.11";

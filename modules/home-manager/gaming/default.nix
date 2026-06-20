@@ -1,10 +1,10 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     ./mangohud.nix
   ];
 
   home.packages = with pkgs; [
-    
+
     # utilities
     wineWow64Packages.waylandFull
     wine-wayland
@@ -14,7 +14,7 @@
 
     # launchers
     cockatrice
-    #lutris
+    lutris
     vintagestory
     prismlauncher
 

@@ -35,11 +35,10 @@
     krita
     gnome-text-editor
     chromium
-    kdePackages.kdenlive
-    httpie
     opencode
     opencode-claude-auth
-    claude-code
+    tabiew
+    winboat
 
     # terminal time
     mpv

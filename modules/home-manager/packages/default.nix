@@ -39,6 +39,7 @@
     opencode-claude-auth
     tabiew
     winboat
+    orca-slicer
 
     # terminal time
     mpv

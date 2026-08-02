@@ -1,9 +1,10 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     ./fonts.nix
     ./syncthing.nix
     ./zoxide.nix
     ./locate.nix
+    ./ollama.nix
   ];
 
   # system packages
@@ -51,15 +52,4 @@
   services.udev.packages = with pkgs; [
     via
   ];
-
-
-  #programs.thunar = {
-  #      enable = true;
-  #      plugins = with pkgs.xfce; [
-  #          thunar-archive-plugin
-  #          thunar-volman
-  #      ];
-  #  };
-
-  #  programs.xfconf.enable = true;
 }

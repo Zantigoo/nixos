@@ -3,7 +3,8 @@
   inputs,
   config,
   ...
-}: {
+}:
+{
   imports = [
   ];
   stylix = {
@@ -38,15 +39,15 @@
         package = pkgs.fira-code;
       };
       serif = {
-      package = pkgs.dejavu_fonts;
-      name = "DejaVu Serif";
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Serif";
       };
       sansSerif = {
-      package = pkgs.dejavu_fonts;
-      name = "DejaVu Sans";
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
       };
-    };   
-    
+    };
+
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
@@ -66,10 +67,13 @@
       zellij.enable = true;
       wezterm.enable = true;
       rofi.enable = true;
-      mpv.enable = true;
+      mpv = {
+        enable = true;
+        colors.enable = true;
+        fonts.enable = true;
+      };
       helix.enable = true;
       gtk.enable = true;
-
     };
 
     icons = {
@@ -109,37 +113,44 @@
     platformTheme.name = "kvantum";
     style = {
       name = "kvantum";
-     /* catppuccin = {
-        enable = true;
-        accent = "mauve";
-        flavor = "mocha";
-      };*/
+      /*
+        catppuccin = {
+          enable = true;
+          accent = "mauve";
+          flavor = "mocha";
+        };
+      */
     };
   };
   # set pref dark theme
-  /*dconf.settings = {
-      "org/gnome/desktop/interface" = {
-        color-scheme = "prefer-dark";
-      };
-  };*/
+  /*
+    dconf.settings = {
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+        };
+    };
+  */
   # enable gtk
   gtk = {
     enable = true;
     # gtk theme
-    /*catppuccin = {
-      enable = true;
-      accent = "mauve";
-      flavor = "mocha";
-      size = "compact";
-    };*/
+    /*
+      catppuccin = {
+        enable = true;
+        accent = "mauve";
+        flavor = "mocha";
+        size = "compact";
+      };
+    */
 
-    /*catppuccin.icon = {
-      enable = true;
-      accent = "mauve";
-      flavor = "mocha";
-    };*/
+    /*
+      catppuccin.icon = {
+        enable = true;
+        accent = "mauve";
+        flavor = "mocha";
+      };
+    */
 
   };
-
 
 }

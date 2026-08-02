@@ -1,6 +1,6 @@
 {
   ...
-}: 
+}:
 {
   programs.yazi = {
     enable = true;
@@ -12,6 +12,17 @@
       };
       preview = {
         wrap = "yes";
+      };
+    };
+    vfs = {
+      services = {
+        lumacmini = {
+          host = "192.168.20.247";
+          port = 22;
+          type = "sftp";
+          user = "lumacmini";
+          password = "1776";
+        };
       };
     };
   };

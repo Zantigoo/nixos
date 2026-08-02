@@ -13,6 +13,7 @@
     ./wlr-which-key.nix
     ./easyeffects.nix
     ./firefox.nix
+    ./thunderbird.nix
   ];
 
   home.packages = with pkgs; [
@@ -36,9 +37,9 @@
     gnome-text-editor
     chromium
     opencode
+    claude-code
     opencode-claude-auth
     tabiew
-    winboat
     orca-slicer
 
     # terminal time

@@ -23,6 +23,12 @@
           user = "lumacmini";
           password = "1776";
         };
+        relic = {
+          host = "192.168.1.70";
+          port = 22;
+          type = "sftp";
+          user = "zantigo";
+        };
       };
     };
   };

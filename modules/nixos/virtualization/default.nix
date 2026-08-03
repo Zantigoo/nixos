@@ -7,6 +7,5 @@
       dockerCompat = true;
     };
   };
-  environment.systemPackages = [ pkgs.winboat ];
 
 }

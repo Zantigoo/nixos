@@ -7,7 +7,9 @@
   hardware.flipperzero.enable = true;
 
   # enable networking
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+  };
   networking.networkmanager.wifi.macAddress = "stable-ssid";
 
   # enable bluetooth
@@ -27,7 +29,10 @@
   ];
 
   networking.hosts = {
-    "192.168.20.165" = [ "LUprintServer.local" ];
+    "192.168.1.99" = [ "3DPrinter.local" ];
+    "192.168.1.70" = [ "relic.local" ];
+    "192.168.1.100" = [ "Library.local" ];
+    "192.169.1.99" = [ "3DPrinter.local" ];
   };
 
   networking.firewall = rec {

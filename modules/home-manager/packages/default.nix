@@ -25,9 +25,7 @@
     obsidian
     blockbench
     localsend
-    eog
     onlyoffice-desktopeditors
-    qbittorrent
     warehouse
     obs-studio
     nicotine-plus
@@ -37,16 +35,18 @@
     gnome-text-editor
     chromium
     opencode
-    claude-code
-    opencode-claude-auth
     tabiew
     orca-slicer
+    qimgv
+    proton-vpn
+    transmission_4-gtk
 
     # terminal time
     mpv
     p7zip
     serpl
     jpegoptim
+    proton-cli
 
     # screen capturing
     gpu-screen-recorder

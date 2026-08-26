@@ -32,6 +32,7 @@
     nmap
     python3
     fd
+    eza
 
     #dependants
 

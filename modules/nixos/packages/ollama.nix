@@ -13,5 +13,9 @@
     listenAddressIPv4 = "127.0.0.1";
     port = 3456;
   };
+  services.open-webui = {
+    enable = true;
+    port = 3456;
+  };
 
 }

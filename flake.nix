@@ -19,7 +19,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri = {
-      url = "github:sodiboo/niri-flake";
+      url = "github:bugeats/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zen-browser = {

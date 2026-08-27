@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     inputs.home-manager.nixosModules.default
     # Include the results of the hardware scan.
@@ -10,13 +11,13 @@
     ../../modules/nixos/packages/syncthing.nix
   ];
 
- # Bootloader.
+  # Bootloader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "relic"; # Define your hostname.
-  
+
   security.sudo.wheelNeedsPassword = false;
 
   # Configure network proxy if necessary
@@ -24,7 +25,7 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-    networking.networkmanager.enable = true;
+  networking.networkmanager.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -54,8 +55,11 @@
   users.users.zantigo = {
     isNormalUser = true;
     description = "zantigo";
-    extraGroups = [ "networkmanager" "wheel" ];
- };
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+  };
 
   # Enable automatic login for the user.
   services.getty.autologinUser = "zantigo";
@@ -74,12 +78,13 @@
   ];
 
   virtualisation.docker = {
-    enable = true;  
+    enable = true;
   };
-  
 
-
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -96,9 +101,7 @@
     enable = true;
     settings.PasswordAuthentication = false;
     settings.KbdInteractiveAuthentication = false;
-    };
-
-  
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

@@ -15,7 +15,6 @@
     # launchers
     cockatrice
     lutris
-    vintagestory
     prismlauncher
 
   ];

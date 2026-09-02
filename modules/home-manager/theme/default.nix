@@ -56,7 +56,6 @@
 
     targets = {
       gnome.enable = true;
-      hyprland.enable = false;
       kitty.enable = true;
       btop.enable = true;
       yazi.enable = true;
@@ -74,6 +73,9 @@
       };
       helix.enable = true;
       gtk.enable = true;
+      dank-calender.enable = true;
+      dank-material-shell.enable = true;
+      gnome-text-editor.enable = true;      
     };
 
     icons = {

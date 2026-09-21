@@ -42,6 +42,7 @@
       8000 # Gen Purpose
       25565 # Minecraft Server
       42420 # VintageStory
+      3456 # OpenWebUI
     ];
     allowedTCPPortRanges = [
       {

@@ -3,8 +3,6 @@
     ./fonts.nix
     ./syncthing.nix
     ./zoxide.nix
-    ./locate.nix
-    ./ollama.nix
   ];
 
   # system packages
@@ -17,17 +15,13 @@
     tree
     fastfetch
     jq
-    inotify-tools
-    libnotify
     openssl
     pandoc
-    unrar
     brightnessctl
     pulseaudio
     ffmpeg
     ripgrep
     bluetui
-    powershell
     rclone
     nmap
     python3

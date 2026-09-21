@@ -1,11 +1,11 @@
 { pkgs, ... }:
 
 {
-  services.ollama = {
-    enable = true;
-    package = pkgs.ollama-rocm;
-    rocmOverrideGfx = "10.3.0";
-  };
+  # services.ollama = {
+  #   enable = true;
+  #   package = pkgs.ollama-rocm;
+  #   rocmOverrideGfx = "10.3.0";
+  # };
 
   services.sillytavern = {
     enable = false;

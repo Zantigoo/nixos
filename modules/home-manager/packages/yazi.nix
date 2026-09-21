@@ -14,5 +14,14 @@
         wrap = "yes";
       };
     };
+    vfs = {
+      sftp = {
+        relic = {
+          host = "192.168.1.70";
+          port = 22;
+          user = "zantigo";
+        };
+      };
+    };
   };
 }

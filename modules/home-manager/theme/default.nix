@@ -73,9 +73,9 @@
       };
       helix.enable = true;
       gtk.enable = true;
-      dank-calender.enable = true;
-      dank-material-shell.enable = true;
-      gnome-text-editor.enable = true;      
+      dank-calendar.enable = true;
+      gnome-text-editor.enable = true;
+      opencode.enable = true; 
     };
 
     icons = {

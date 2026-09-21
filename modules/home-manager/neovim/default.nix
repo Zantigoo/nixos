@@ -21,7 +21,7 @@ inputs,
     ./plugins.nix
     ];
     programs.nixvim = {
-        enable = true;
+        enable = false;
           opts = {
 						# Tab settings			
             tabstop = 2;

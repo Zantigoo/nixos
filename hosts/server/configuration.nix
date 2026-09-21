@@ -9,6 +9,9 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../modules/nixos/packages/syncthing.nix
+    ../../modules/nixos/localLLM.nix
+    ../../modules/home-manager/shell/default.nix
+    ../../modules/home-manager/packages/helix.nix
   ];
 
   # Bootloader.

@@ -109,6 +109,9 @@
     allowedTCPPorts = [
       8100
     ];
+    allowedUDPPorts = [
+      8100
+    ];
   };
 
   # This value determines the NixOS release from which the default

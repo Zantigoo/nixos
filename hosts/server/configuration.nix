@@ -112,21 +112,21 @@
     allowedUDPPorts = [
       8100
     ];
-    nat = {
-      enable = true;
-      internalInterfaces = [ "lo" ];
-      externalInterface = "wlp2s0";
-      forwardPorts = [
-        {
-          sourcePort = 8100;
-          proto = "tcp";
-          destination = "192.168.1.70";
-        }
-      ];
-    };
+
   };
 
-  # This value determines the NixOS release from which the default
+  networking.nat = {
+    enable = true;
+    internalInterfaces = [ "lo" ];
+    externalInterface = "wlp2s0";
+    forwardPorts = [
+      {
+        sourcePort = 8100;
+        proto = "tcp";
+        destination = "192.168.1.70";
+      }
+    ];
+  }; # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
   # this value at the release version of the first install of this system.

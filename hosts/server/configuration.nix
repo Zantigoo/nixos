@@ -112,6 +112,18 @@
     allowedUDPPorts = [
       8100
     ];
+    nat = {
+      enable = true;
+      internalInterfaces = [ "lo" ];
+      externalInterface = "wlp2s0";
+      forwardPorts = [
+        {
+          sourcePort = 8100;
+          proto = "tcp";
+          destination = "192.168.1.70";
+        }
+      ];
+    };
   };
 
   # This value determines the NixOS release from which the default

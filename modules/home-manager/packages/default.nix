@@ -23,6 +23,7 @@
     # desktop apps
     vesktop
     obsidian
+    blender
     blockbench
     localsend
     onlyoffice-desktopeditors

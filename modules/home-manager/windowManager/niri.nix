@@ -5,7 +5,6 @@
   ...
 }:
 {
-  nixpkgs.overlays = [ inputs.niri.overlays.niri ];
   programs.niri = {
     settings = {
       binds = with config.lib.niri.actions; {
